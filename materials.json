@@ -1,0 +1,122 @@
+{
+  "cities": {
+    "lahore": { "label": "Lahore", "factor": 1.0, "desc": "Standard central Pakistan pricing index." },
+    "islamabad": { "label": "Islamabad", "factor": 1.05, "desc": "Includes capital territory logistics and regulatory surcharges." },
+    "karachi": { "label": "Karachi", "factor": 1.02, "desc": "Adjusted for coastal region transport and port-handling duties." },
+    "rawalpindi": { "label": "Rawalpindi", "factor": 1.04, "desc": "Northern zone materials freight index." },
+    "faisalabad": { "label": "Faisalabad", "factor": 0.98, "desc": "Proximity to central brick kilns and sand sourcing sites." }
+  },
+  "material_index": {
+    "steel": { "label": "Steel (60 Grade Rebar)", "unit": "Ton", "rate": 295000, "prev_rate": 305000, "category": "Steel" },
+    "cement": { "label": "Cement (A-Grade Portland)", "unit": "Bag", "rate": 1450, "prev_rate": 1410, "category": "Cement" },
+    "bricks": { "label": "Bricks (First-Class Gutka)", "unit": "1000 Pcs", "rate": 18000, "prev_rate": 19000, "category": "Bricks" },
+    "sand": { "label": "Ravi Sand (Fine Coarse)", "unit": "CFT", "rate": 140, "prev_rate": 135, "category": "Sand" },
+    "crusher": { "label": "Crush (Margalla Coarse)", "unit": "CFT", "rate": 170, "prev_rate": 175, "category": "Crush" },
+    "tile": { "label": "Tiles (Imported Porcelain)", "unit": "Sq Ft", "rate": 450, "prev_rate": 420, "category": "Tiles" },
+    "paint": { "label": "Premium Weather Shield Paint", "unit": "Litre", "rate": 820, "prev_rate": 850, "category": "Paint" },
+    "electrical": { "label": "Wiring & DB Panels", "unit": "Sq Ft", "rate": 350, "prev_rate": 340, "category": "Electrical" },
+    "plumbing": { "label": "PPRC/PVC Piping & Fit", "unit": "Sq Ft", "rate": 400, "prev_rate": 395, "category": "Plumbing" }
+  },
+  "quality_coefs": {
+    "economy": {
+      "label": "Economy Quality",
+      "rates_multiplier": 0.85,
+      "grey_structure": {
+        "steel_ton_per_sqft": 0.0038,
+        "cement_bag_per_sqft": 0.42,
+        "bricks_pcs_per_sqft": 32,
+        "sand_cft_per_sqft": 1.2,
+        "crush_cft_per_sqft": 0.8,
+        "labour_rate_per_sqft": 480,
+        "equipment_rate_per_sqft": 90,
+        "waterproofing_rate_per_sqft": 20,
+        "misc_rate_per_sqft": 50
+      },
+      "finishing": {
+        "tile_sqft_per_sqft": 1.0,
+        "paint_litre_per_sqft": 0.08,
+        "electrical_rate_per_sqft": 220,
+        "plumbing_rate_per_sqft": 250,
+        "woodwork_rate_per_sqft": 280,
+        "kitchen_rate_per_sqft": 180,
+        "bathroom_rate_per_sqft": 200,
+        "finishing_labour_rate_per_sqft": 450
+      }
+    },
+    "standard": {
+      "label": "Standard Quality",
+      "rates_multiplier": 1.0,
+      "grey_structure": {
+        "steel_ton_per_sqft": 0.0042,
+        "cement_bag_per_sqft": 0.45,
+        "bricks_pcs_per_sqft": 35,
+        "sand_cft_per_sqft": 1.4,
+        "crush_cft_per_sqft": 0.9,
+        "labour_rate_per_sqft": 550,
+        "equipment_rate_per_sqft": 120,
+        "waterproofing_rate_per_sqft": 30,
+        "misc_rate_per_sqft": 80
+      },
+      "finishing": {
+        "tile_sqft_per_sqft": 1.2,
+        "paint_litre_per_sqft": 0.10,
+        "electrical_rate_per_sqft": 350,
+        "plumbing_rate_per_sqft": 400,
+        "woodwork_rate_per_sqft": 450,
+        "kitchen_rate_per_sqft": 300,
+        "bathroom_rate_per_sqft": 350,
+        "finishing_labour_rate_per_sqft": 650
+      }
+    },
+    "premium": {
+      "label": "Premium Quality (Recommended)",
+      "rates_multiplier": 1.2,
+      "grey_structure": {
+        "steel_ton_per_sqft": 0.0045,
+        "cement_bag_per_sqft": 0.48,
+        "bricks_pcs_per_sqft": 37,
+        "sand_cft_per_sqft": 1.5,
+        "crush_cft_per_sqft": 1.0,
+        "labour_rate_per_sqft": 620,
+        "equipment_rate_per_sqft": 150,
+        "waterproofing_rate_per_sqft": 45,
+        "misc_rate_per_sqft": 110
+      },
+      "finishing": {
+        "tile_sqft_per_sqft": 1.3,
+        "paint_litre_per_sqft": 0.12,
+        "electrical_rate_per_sqft": 500,
+        "plumbing_rate_per_sqft": 550,
+        "woodwork_rate_per_sqft": 650,
+        "kitchen_rate_per_sqft": 450,
+        "bathroom_rate_per_sqft": 500,
+        "finishing_labour_rate_per_sqft": 800
+      }
+    },
+    "luxury": {
+      "label": "Luxury / Elite Quality",
+      "rates_multiplier": 1.5,
+      "grey_structure": {
+        "steel_ton_per_sqft": 0.0048,
+        "cement_bag_per_sqft": 0.52,
+        "bricks_pcs_per_sqft": 40,
+        "sand_cft_per_sqft": 1.6,
+        "crush_cft_per_sqft": 1.1,
+        "labour_rate_per_sqft": 750,
+        "equipment_rate_per_sqft": 200,
+        "waterproofing_rate_per_sqft": 70,
+        "misc_rate_per_sqft": 160
+      },
+      "finishing": {
+        "tile_sqft_per_sqft": 1.4,
+        "paint_litre_per_sqft": 0.15,
+        "electrical_rate_per_sqft": 750,
+        "plumbing_rate_per_sqft": 800,
+        "woodwork_rate_per_sqft": 950,
+        "kitchen_rate_per_sqft": 700,
+        "bathroom_rate_per_sqft": 800,
+        "finishing_labour_rate_per_sqft": 1100
+      }
+    }
+  }
+}
