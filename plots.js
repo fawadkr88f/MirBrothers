@@ -4,6 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
     let rawListings = [];
     let activeSelection = [];
     let customOverrides = JSON.parse(localStorage.getItem('mir_plot_overrides')) || {};
+    let sortColumn = null;
+    let sortAscending = true;
 
     // Get current date for update dates (August 2026 base)
     const today = new Date();
@@ -136,6 +138,26 @@ document.addEventListener('DOMContentLoaded', () => {
         const tbody = document.getElementById('plotsTableBody');
         if (!tbody) return;
         tbody.innerHTML = '';
+
+        // Sort activeSelection if sortColumn is active
+        if (sortColumn) {
+            activeSelection.sort((a, b) => {
+                let valA = a[sortColumn];
+                let valB = b[sortColumn];
+
+                if (sortColumn === 'price') {
+                    valA = a.price_pkr;
+                    valB = b.price_pkr;
+                } else if (sortColumn === 'size') {
+                    valA = a.size_marla;
+                    valB = b.size_marla;
+                }
+
+                if (valA < valB) return sortAscending ? -1 : 1;
+                if (valA > valB) return sortAscending ? 1 : -1;
+                return 0;
+            });
+        }
 
         // Update counter label
         document.getElementById('plotsCounterLabel').textContent = activeSelection.length;
@@ -478,6 +500,37 @@ document.addEventListener('DOMContentLoaded', () => {
             alert("Selection updated successfully!");
         });
     }
+
+    // --- SORT HEADER LISTENER REGISTRY ---
+    function setupHeaderSorting() {
+        const headers = document.querySelectorAll('.sortable-header');
+        headers.forEach(header => {
+            header.addEventListener('click', () => {
+                const col = header.dataset.sort;
+                if (sortColumn === col) {
+                    sortAscending = !sortAscending;
+                } else {
+                    sortColumn = col;
+                    sortAscending = true;
+                }
+                
+                // Update header icons visually
+                headers.forEach(h => {
+                    const indicator = h.querySelector('.sort-indicator');
+                    if (h.dataset.sort === sortColumn) {
+                        indicator.textContent = sortAscending ? '▲' : '▼';
+                        indicator.style.color = 'var(--gold-primary)';
+                    } else {
+                        indicator.textContent = '⇅';
+                        indicator.style.color = 'var(--text-muted)';
+                    }
+                });
+
+                renderPlotsTable();
+            });
+        });
+    }
+    setupHeaderSorting();
 
     function getFallbackRegistry() {
         return [
