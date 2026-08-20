@@ -109,7 +109,8 @@ document.addEventListener('DOMContentLoaded', () => {
         // Filter out non-eligible listings
         const eligible = listings.filter(item => {
             if (item.force_exclude) return false;
-            return item.possession && item.ready_to_build && item.status === 'active';
+            const withinSizeRange = item.size_marla >= 5 && item.size_marla <= 20;
+            return item.possession && item.ready_to_build && item.status === 'active' && withinSizeRange;
         });
 
         // Rank eligible plots by features (corner, park facing, main boulevard, and admin featured flags boost score)
@@ -175,26 +176,16 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             if (featuresHtml === '') featuresHtml = '<span style="color: var(--text-muted); font-size: 0.75rem;">Standard Block</span>';
 
-            // Sources block
-            let sourceHtml = item.source_site;
-            let sourceUrl = item.original_url;
-            if (item.multiple_sources) {
-                sourceHtml = `<span title="${item.sources_list.join(', ')}" style="cursor: help; text-decoration: underline dashed;">Multiple (${item.sources_list.length})</span>`;
-                sourceUrl = item.urls_list[0];
-            }
-
             tr.innerHTML = `
                 <td><strong style="color: var(--gold-primary); font-family: 'Outfit'; font-size: 0.95rem;">${item.phase}</strong></td>
-                <td>Block ${item.block} ${item.plot_no ? `/ Plot ${item.plot_no}` : ''}</td>
+                <td>Block ${item.block}</td>
                 <td><strong>${sizeLabel}</strong></td>
                 <td class="text-right"><strong style="color: var(--gold-primary); font-size: 0.95rem;">PKR ${priceCrore} Crore</strong></td>
                 <td class="text-right" style="color: var(--text-secondary); font-size: 0.8rem;">PKR ${marlaRate} Lac</td>
-                <td><span style="color: var(--success-green); font-weight: 600; font-size: 0.78rem;">✓ Possession & Buildable</span></td>
+                <td><span style="color: var(--success-green); font-weight: 600; font-size: 0.78rem;">✓ Possession & Ready</span></td>
                 <td>${featuresHtml}</td>
-                <td><span style="font-size: 0.8rem; color: var(--text-muted);">${sourceHtml}</span></td>
                 <td class="text-center">
                     <div style="display: flex; gap: 0.4rem; justify-content: center; align-items: center;">
-                        <a href="${sourceUrl}" target="_blank" class="btn btn-gold-outline btn-sm" style="padding: 0.35rem 0.65rem; font-size: 0.72rem; white-space: nowrap;">Source</a>
                         <button class="btn btn-primary btn-sm build-estimate-trigger" data-id="${item.id}" style="padding: 0.35rem 0.65rem; font-size: 0.72rem; white-space: nowrap;">Build Estimate</button>
                     </div>
                 </td>
