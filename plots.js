@@ -198,11 +198,14 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             if (featuresHtml === '') featuresHtml = '<span style="color: var(--text-muted); font-size: 0.75rem;">Standard Block</span>';
 
+            const cleanBlock = item.block.replace('Block ', '').replace('Rahbar ', '').trim();
+            const priceInLacs = item.price_pkr / 100000;
+            const detailsVal = `${cleanBlock}- ${item.plot_no || 'TBD'}@${priceInLacs}${priceInLacs >= 300 ? ' lac' : ''}`;
+
             tr.innerHTML = `
                 <td><strong style="color: var(--gold-primary); font-family: 'Outfit'; font-size: 0.95rem;">${item.phase}</strong></td>
-                <td>${item.block}</td>
                 <td><strong>${sizeLabel}</strong></td>
-                <td class="text-right"><strong style="color: var(--gold-primary); font-size: 0.95rem;">PKR ${priceCrore} Crore</strong></td>
+                <td><code style="background: rgba(255,255,255,0.03); padding: 0.25rem 0.5rem; border-radius: 4px; color: var(--gold-primary); font-weight: 700; font-family: monospace; font-size: 0.85rem;">${detailsVal}</code></td>
                 <td><span style="font-size: 0.8rem; font-weight: 600; color: var(--gold-primary); white-space: nowrap;">Mir Brothers Real Estate Division</span></td>
                 <td class="text-center">
                     <div style="display: flex; gap: 0.4rem; justify-content: center; align-items: center;">
