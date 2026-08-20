@@ -8,10 +8,13 @@
     "price_pkr": 75000000,
     "possession": true,
     "ready_to_build": true,
-    "features": ["main-boulevard", "possession-ready"],
+    "features": [
+      "main-boulevard",
+      "possession-ready"
+    ],
     "source_site": "Lahore Real Estate",
     "original_url": "https://www.lahorerealestate.com/listings/dha-phase-6-block-m-412",
-    "last_checked": "2026-08-20",
+    "last_checked": "2026-08-17",
     "first_seen": "2026-08-05",
     "status": "active",
     "description": "Ideal 1 Kanal plot on 150ft main boulevard, possession paid and ready for construction. Solid land, no fill."
@@ -25,10 +28,12 @@
     "price_pkr": 75000000,
     "possession": true,
     "ready_to_build": true,
-    "features": ["main-boulevard"],
+    "features": [
+      "main-boulevard"
+    ],
     "source_site": "Zameen",
     "original_url": "https://www.zameen.com/property/dha-phase-6-block-m-1-kanal-boulevard-plot-10934.html",
-    "last_checked": "2026-08-20",
+    "last_checked": "2026-08-17",
     "first_seen": "2026-08-07",
     "status": "active",
     "description": "Premium 1 Kanal commercial/residential mixed zoning plot facing the main boulevard in Phase 6 M block."
@@ -42,10 +47,13 @@
     "price_pkr": 26500000,
     "possession": true,
     "ready_to_build": true,
-    "features": ["corner", "park-facing"],
+    "features": [
+      "corner",
+      "park-facing"
+    ],
     "source_site": "Zameen",
     "original_url": "https://www.zameen.com/property/dha-phase-8-y-block-10-marla-corner-12344.html",
-    "last_checked": "2026-08-20",
+    "last_checked": "2026-08-17",
     "first_seen": "2026-08-10",
     "status": "active",
     "description": "Beautiful corner and park facing plot in Phase 8 Y block. Highly secure and ready for immediate construction."
@@ -59,10 +67,12 @@
     "price_pkr": 92000000,
     "possession": true,
     "ready_to_build": true,
-    "features": ["possession-ready"],
+    "features": [
+      "possession-ready"
+    ],
     "source_site": "Lahore Real Estate",
     "original_url": "https://www.lahorerealestate.com/listings/dha-phase-5-block-g-85",
-    "last_checked": "2026-08-20",
+    "last_checked": "2026-08-17",
     "first_seen": "2026-08-01",
     "status": "active",
     "description": "1 Kanal solid land in G Block Phase 5. Under-ground wiring and gated enclave ready to shift."
@@ -76,10 +86,12 @@
     "price_pkr": 16500000,
     "possession": true,
     "ready_to_build": true,
-    "features": ["park-facing"],
+    "features": [
+      "park-facing"
+    ],
     "source_site": "Zameen",
     "original_url": "https://www.zameen.com/property/dha-phase-9-prism-block-d-5-marla-342.html",
-    "last_checked": "2026-08-20",
+    "last_checked": "2026-08-17",
     "first_seen": "2026-08-12",
     "status": "active",
     "description": "Superb 5 Marla residential plot near the main gate of Phase 9 Prism, Block D. Possession given."
@@ -93,10 +105,12 @@
     "price_pkr": 14000000,
     "possession": true,
     "ready_to_build": true,
-    "features": ["corner"],
+    "features": [
+      "corner"
+    ],
     "source_site": "Zameen",
     "original_url": "https://www.zameen.com/property/dha-rahbar-phase-11-5-marla-corner-plot-3324.html",
-    "last_checked": "2026-08-20",
+    "last_checked": "2026-08-17",
     "first_seen": "2026-08-15",
     "status": "active",
     "description": "DHA Rahbar Phase 11 Sector B corner plot. Gas, electricity, and clean water meters already installed."
@@ -113,7 +127,7 @@
     "features": [],
     "source_site": "Zameen",
     "original_url": "https://www.zameen.com/property/dha-phase-6-block-h-10-marla-plot-431.html",
-    "last_checked": "2026-08-20",
+    "last_checked": "2026-08-17",
     "first_seen": "2026-08-14",
     "status": "active",
     "description": "Standard 10 Marla residential plot in H Block Phase 6. Close to commercial sector, excellent road network."
@@ -127,10 +141,12 @@
     "price_pkr": 79000000,
     "possession": true,
     "ready_to_build": true,
-    "features": ["possession-ready"],
+    "features": [
+      "possession-ready"
+    ],
     "source_site": "Lahore Real Estate",
     "original_url": "https://www.lahorerealestate.com/listings/dha-phase-4-cc-231",
-    "last_checked": "2026-08-20",
+    "last_checked": "2026-08-17",
     "first_seen": "2026-08-02",
     "status": "active",
     "description": "Established Phase 4 G Block CC 1 Kanal residential site. Level land, ready for immediate brick laying."
@@ -144,10 +160,13 @@
     "price_pkr": 48000000,
     "possession": true,
     "ready_to_build": true,
-    "features": ["corner", "possession-ready"],
+    "features": [
+      "corner",
+      "possession-ready"
+    ],
     "source_site": "Zameen",
     "original_url": "https://www.zameen.com/property/dha-phase-8-ivy-green-1-kanal-corner-93421.html",
-    "last_checked": "2026-08-20",
+    "last_checked": "2026-08-17",
     "first_seen": "2026-08-11",
     "status": "active",
     "description": "Outstanding 1 Kanal corner plot in Ivy Green Phase 8. Level ground, utilities fully operational."
@@ -161,10 +180,12 @@
     "price_pkr": 48000000,
     "possession": true,
     "ready_to_build": true,
-    "features": ["corner"],
+    "features": [
+      "corner"
+    ],
     "source_site": "Lahore Real Estate",
     "original_url": "https://www.lahorerealestate.com/listings/dha-phase-8-ivy-12",
-    "last_checked": "2026-08-20",
+    "last_checked": "2026-08-17",
     "first_seen": "2026-08-12",
     "status": "active",
     "description": "Ivy Green Block Z-1 (Ivy) 1 Kanal corner plot. High position, no sewage drainage pipeline issues."
@@ -181,7 +202,7 @@
     "features": [],
     "source_site": "Zameen",
     "original_url": "https://www.zameen.com/property/dha-phase-9-prism-p-block-10-marla-344.html",
-    "last_checked": "2026-08-20",
+    "last_checked": "2026-08-17",
     "first_seen": "2026-08-09",
     "status": "active",
     "description": "Phase 9 Prism P Block 10 Marla plot. Possession paid, boundary walls built in adjacent plots."
@@ -195,10 +216,12 @@
     "price_pkr": 24500000,
     "possession": true,
     "ready_to_build": true,
-    "features": ["possession-ready"],
+    "features": [
+      "possession-ready"
+    ],
     "source_site": "Lahore Real Estate",
     "original_url": "https://www.lahorerealestate.com/listings/dha-phase-1-m-77",
-    "last_checked": "2026-08-20",
+    "last_checked": "2026-08-17",
     "first_seen": "2026-08-04",
     "status": "active",
     "description": "Hot deal in Phase 1 Block M. 10 Marla ready to construct residential land, very close to market."
@@ -212,10 +235,13 @@
     "price_pkr": 175000000,
     "possession": true,
     "ready_to_build": true,
-    "features": ["main-boulevard", "corner"],
+    "features": [
+      "main-boulevard",
+      "corner"
+    ],
     "source_site": "Zameen",
     "original_url": "https://www.zameen.com/property/dha-phase-6-block-k-2-kanal-corner-9831.html",
-    "last_checked": "2026-08-20",
+    "last_checked": "2026-08-17",
     "first_seen": "2026-08-01",
     "status": "active",
     "description": "Luxurious 2 Kanal corner plot on Main Boulevard in Phase 6 K Block. Perfect for a grand mansion."
@@ -232,7 +258,7 @@
     "features": [],
     "source_site": "Zameen",
     "original_url": "https://www.zameen.com/property/dha-phase-2-block-q-8-marla-943.html",
-    "last_checked": "2026-08-20",
+    "last_checked": "2026-08-17",
     "first_seen": "2026-08-16",
     "status": "active",
     "description": "8 Marla residential land in Phase 2 Q Block. Close to schools, gas connection verified."
@@ -246,10 +272,12 @@
     "price_pkr": 52000000,
     "possession": true,
     "ready_to_build": true,
-    "features": ["possession-ready"],
+    "features": [
+      "possession-ready"
+    ],
     "source_site": "Lahore Real Estate",
     "original_url": "https://www.lahorerealestate.com/listings/dha-phase-7-t-506",
-    "last_checked": "2026-08-20",
+    "last_checked": "2026-08-17",
     "first_seen": "2026-08-02",
     "status": "active",
     "description": "1 Kanal plot in Block T, Phase 7. Fully developed sector with operational electric lines."
@@ -263,10 +291,12 @@
     "price_pkr": 43500000,
     "possession": true,
     "ready_to_build": true,
-    "features": ["corner"],
+    "features": [
+      "corner"
+    ],
     "source_site": "Zameen",
     "original_url": "https://www.zameen.com/property/dha-phase-9-prism-q-1-kanal-corner-331.html",
-    "last_checked": "2026-08-20",
+    "last_checked": "2026-08-17",
     "first_seen": "2026-08-08",
     "status": "active",
     "description": "Prime 1 Kanal corner residential plot in Phase 9 Prism, Block Q. Immediate possession paid."
@@ -280,10 +310,12 @@
     "price_pkr": 33000000,
     "possession": true,
     "ready_to_build": true,
-    "features": ["park-facing"],
+    "features": [
+      "park-facing"
+    ],
     "source_site": "Zameen",
     "original_url": "https://www.zameen.com/property/dha-phase-5-block-c-10-marla-park-facing-12.html",
-    "last_checked": "2026-08-20",
+    "last_checked": "2026-08-17",
     "first_seen": "2026-08-11",
     "status": "active",
     "description": "Superb 10 Marla park facing plot in Block C, Phase 5. Under-ground infrastructure."
@@ -297,10 +329,12 @@
     "price_pkr": 19000000,
     "possession": false,
     "ready_to_build": false,
-    "features": ["non-possession"],
+    "features": [
+      "non-possession"
+    ],
     "source_site": "Zameen",
     "original_url": "https://www.zameen.com/property/dha-phase-9-prism-file-only-233.html",
-    "last_checked": "2026-08-20",
+    "last_checked": "2026-08-17",
     "first_seen": "2026-08-18",
     "status": "active",
     "description": "10 Marla residential file in Block J. Non-possession plot, excellent for long-term investment."
@@ -314,10 +348,12 @@
     "price_pkr": 39000000,
     "possession": false,
     "ready_to_build": false,
-    "features": ["non-possession"],
+    "features": [
+      "non-possession"
+    ],
     "source_site": "Lahore Real Estate",
     "original_url": "https://www.lahorerealestate.com/listings/dha-phase-11-c-19",
-    "last_checked": "2026-08-20",
+    "last_checked": "2026-08-17",
     "first_seen": "2026-08-01",
     "status": "active",
     "description": "1 Kanal plot in Sector C, DHA Rahbar Phase 11. Surcharge paid but possession not yet available."
@@ -334,7 +370,7 @@
     "features": [],
     "source_site": "Zameen",
     "original_url": "https://www.zameen.com/property/dha-phase-8-block-s-10-marla-plot-343.html",
-    "last_checked": "2026-08-20",
+    "last_checked": "2026-08-17",
     "first_seen": "2026-08-09",
     "status": "active",
     "description": "10 Marla plot in Phase 8 S Block. Ideal location, clean surroundings and ready for foundation laying."
@@ -348,10 +384,12 @@
     "price_pkr": 81000000,
     "possession": true,
     "ready_to_build": true,
-    "features": ["possession-ready"],
+    "features": [
+      "possession-ready"
+    ],
     "source_site": "Zameen",
     "original_url": "https://www.zameen.com/property/dha-phase-6-block-c-1-kanal-plot-981.html",
-    "last_checked": "2026-08-20",
+    "last_checked": "2026-08-17",
     "first_seen": "2026-08-11",
     "status": "active",
     "description": "Premium 1 Kanal plot in Phase 6 Block C. Prime height location, solid land ready for builders."
@@ -365,10 +403,12 @@
     "price_pkr": 27500000,
     "possession": true,
     "ready_to_build": true,
-    "features": ["corner"],
+    "features": [
+      "corner"
+    ],
     "source_site": "Lahore Real Estate",
     "original_url": "https://www.lahorerealestate.com/listings/dha-phase-4-aa-50",
-    "last_checked": "2026-08-20",
+    "last_checked": "2026-08-17",
     "first_seen": "2026-08-03",
     "status": "active",
     "description": "10 Marla corner plot in Block AA, Phase 4. Peaceful lane, fully populated sector."
