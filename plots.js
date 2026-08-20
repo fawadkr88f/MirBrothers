@@ -181,8 +181,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 <td>Block ${item.block}</td>
                 <td><strong>${sizeLabel}</strong></td>
                 <td class="text-right"><strong style="color: var(--gold-primary); font-size: 0.95rem;">PKR ${priceCrore} Crore</strong></td>
-                <td class="text-right" style="color: var(--text-secondary); font-size: 0.8rem;">PKR ${marlaRate} Lac</td>
-                <td><span style="color: var(--success-green); font-weight: 600; font-size: 0.78rem;">✓ Possession & Ready</span></td>
                 <td>${featuresHtml}</td>
                 <td><span style="font-size: 0.8rem; font-weight: 600; color: var(--gold-primary); white-space: nowrap;">Mir Brothers Real Estate Division</span></td>
                 <td class="text-center">
