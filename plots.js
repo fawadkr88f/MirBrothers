@@ -111,7 +111,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Filter out non-eligible listings
         const eligible = listings.filter(item => {
             if (item.force_exclude) return false;
-            const withinSizeRange = item.size_marla >= 5 && item.size_marla <= 20;
+            const withinSizeRange = item.size_marla === 5 || item.size_marla === 10 || item.size_marla === 20;
             return item.possession && item.ready_to_build && item.status === 'active' && withinSizeRange;
         });
 
