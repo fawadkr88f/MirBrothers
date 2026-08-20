@@ -200,7 +200,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const cleanBlock = item.block.replace('Block ', '').replace('Rahbar ', '').trim();
             const priceInLacs = item.price_pkr / 100000;
-            const detailsVal = `${cleanBlock}- ${item.plot_no || 'TBD'}@${priceInLacs}${priceInLacs >= 300 ? ' lac' : ''}`;
+            const detailsVal = `${cleanBlock}- ${item.plot_no || 'TBD'}@${priceInLacs}`;
 
             tr.innerHTML = `
                 <td><strong style="color: var(--gold-primary); font-family: 'Outfit'; font-size: 0.95rem;">${item.phase}</strong></td>
