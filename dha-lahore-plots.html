@@ -107,104 +107,36 @@
     <!-- Main Selected Plots Portal Viewport -->
     <section class="section plots-portal-section no-print" style="background-color: var(--bg-secondary); border-bottom: 1px solid var(--border-color);">
         <div class="container">
-            <div class="plots-portal-layout" style="display: grid; grid-template-columns: 300px 1fr; gap: 2.5rem; align-items: start;">
-                
-                <!-- Sidebar Filters Drawer -->
-                <aside class="filters-sidebar glass-card" style="padding: 1.75rem; border-color: var(--border-color); position: sticky; top: 110px; z-index: 10;">
-                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.75rem;">
-                        <h4 style="font-family: 'Outfit'; font-size: 1.15rem; color: var(--gold-primary);">Search Filters</h4>
-                        <button id="clearFiltersBtn" style="background: none; border: none; color: var(--text-muted); font-size: 0.75rem; text-decoration: underline; cursor: pointer;">Clear All</button>
+            <div class="plots-portal-layout" style="display: block;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
+                    <p style="color: var(--text-secondary); font-size: 0.95rem;">
+                        Displaying our curated shortlist of <span id="plotsCounterLabel" style="font-weight: 700; color: var(--gold-primary);">20</span> premium ready-to-build plots.
+                    </p>
+                    <div style="font-size: 0.85rem; color: var(--text-muted);">
+                        Vetted by Mir Brothers Builders.
                     </div>
+                </div>
 
-                    <!-- DHA Phase Filter -->
-                    <div class="filter-group" style="margin-bottom: 1.5rem;">
-                        <label style="display: block; font-family: 'Outfit'; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; color: var(--text-primary); margin-bottom: 0.5rem;">DHA Phase</label>
-                        <select id="filterPhase" class="form-control-sm" style="width: 100%; background-color: var(--bg-primary);">
-                            <option value="all">All Phases</option>
-                            <option value="Phase 1">Phase 1</option>
-                            <option value="Phase 2">Phase 2</option>
-                            <option value="Phase 4">Phase 4</option>
-                            <option value="Phase 5">Phase 5</option>
-                            <option value="Phase 6">Phase 6</option>
-                            <option value="Phase 7">Phase 7</option>
-                            <option value="Phase 8">Phase 8</option>
-                            <option value="Phase 9">Phase 9</option>
-                            <option value="Phase 9 Prism">Phase 9 Prism</option>
-                            <option value="Phase 11">Phase 11 (Rahbar)</option>
-                        </select>
-                    </div>
-
-                    <!-- Plot Size Filter -->
-                    <div class="filter-group" style="margin-bottom: 1.5rem;">
-                        <label style="display: block; font-family: 'Outfit'; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; color: var(--text-primary); margin-bottom: 0.5rem;">Plot Size</label>
-                        <select id="filterSize" class="form-control-sm" style="width: 100%; background-color: var(--bg-primary);">
-                            <option value="all">All Sizes</option>
-                            <option value="5">5 Marla</option>
-                            <option value="8">8 Marla</option>
-                            <option value="10">10 Marla</option>
-                            <option value="20">1 Kanal (20 Marla)</option>
-                            <option value="40">2 Kanal (40 Marla)</option>
-                            <option value="other">Other Sizes</option>
-                        </select>
-                    </div>
-
-                    <!-- Price Filter -->
-                    <div class="filter-group" style="margin-bottom: 1.5rem;">
-                        <label style="display: block; font-family: 'Outfit'; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; color: var(--text-primary); margin-bottom: 0.5rem;">Price Range (Crore PKR)</label>
-                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem;">
-                            <input type="number" id="filterPriceMin" placeholder="Min" class="form-control-sm" style="background-color: var(--bg-primary); text-align: center;">
-                            <input type="number" id="filterPriceMax" placeholder="Max" class="form-control-sm" style="background-color: var(--bg-primary); text-align: center;">
-                        </div>
-                    </div>
-
-                    <!-- Features Checklist -->
-                    <div class="filter-group" style="margin-bottom: 1.5rem;">
-                        <label style="display: block; font-family: 'Outfit'; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; color: var(--text-primary); margin-bottom: 0.75rem;">Plot Features</label>
-                        <div style="display: flex; flex-direction: column; gap: 0.65rem;">
-                            <label class="checkbox-container" style="font-size: 0.85rem;">
-                                <input type="checkbox" id="chkFilterCorner">
-                                <span class="checkmark"></span>
-                                Corner Plot
-                            </label>
-                            <label class="checkbox-container" style="font-size: 0.85rem;">
-                                <input type="checkbox" id="chkFilterPark">
-                                <span class="checkmark"></span>
-                                Park Facing
-                            </label>
-                            <label class="checkbox-container" style="font-size: 0.85rem;">
-                                <input type="checkbox" id="chkFilterBoulevard">
-                                <span class="checkmark"></span>
-                                Main Boulevard
-                            </label>
-                            <label class="checkbox-container" style="font-size: 0.85rem;">
-                                <input type="checkbox" id="chkFilterPossession" checked disabled>
-                                <span class="checkmark" style="opacity: 0.6;"></span>
-                                Possession Available
-                            </label>
-                            <label class="checkbox-container" style="font-size: 0.85rem;">
-                                <input type="checkbox" id="chkFilterBuildable" checked disabled>
-                                <span class="checkmark" style="opacity: 0.6;"></span>
-                                Ready to Build
-                            </label>
-                        </div>
-                    </div>
-                </aside>
-
-                <!-- Plots List Grid -->
-                <main class="plots-grid-container">
-                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
-                        <p style="color: var(--text-secondary); font-size: 0.95rem;">
-                            Showing <span id="plotsCounterLabel" style="font-weight: 700; color: var(--gold-primary);">12</span> selected ready-to-build plots.
-                        </p>
-                        <div style="font-size: 0.85rem; color: var(--text-muted);">
-                            Selection updates at midnight.
-                        </div>
-                    </div>
-
-                    <div class="plots-list-grid" id="plotsListGrid" style="display: grid; grid-template-columns: 1fr; gap: 2.5rem;">
-                        <!-- Property cards injected here -->
-                    </div>
-                </main>
+                <div class="responsive-table-container">
+                    <table class="estimate-table" id="plotsTable" style="background: var(--bg-secondary);">
+                        <thead>
+                            <tr>
+                                <th>DHA Phase</th>
+                                <th>Location (Block/Plot)</th>
+                                <th>Plot Size</th>
+                                <th class="text-right">Asking Price</th>
+                                <th class="text-right">Price per Marla</th>
+                                <th>Vetting Status</th>
+                                <th>Key Features</th>
+                                <th>Sourcing Source</th>
+                                <th class="text-center">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="plotsTableBody">
+                            <!-- Injected rows -->
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </section>
