@@ -2239,6 +2239,68 @@ a {
     }
 }
 
+/* Selected Plots Portal Styling */
+.plots-hero {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.plots-portal-layout {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 2.5rem;
+    align-items: start;
+}
+
+.filters-sidebar {
+    position: sticky;
+    top: 110px;
+    z-index: 10;
+}
+
+.plots-list-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+}
+
+.property-card {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    transition: var(--transition-smooth);
+}
+
+.property-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--gold-primary) !important;
+    box-shadow: 0 20px 40px rgba(197, 168, 128, 0.05);
+}
+
+.property-img-pane {
+    min-height: 250px;
+    border-right: 1px solid var(--border-color);
+}
+
+.plots-admin-modal {
+    backdrop-filter: blur(8px);
+    animation: fadeInModal 0.25s ease-out;
+}
+
+@keyframes fadeInModal {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideInRight {
+    from { transform: translateX(100%); }
+    to { transform: translateX(0); }
+}
+
+.admin-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+
 /* Responsive Breakpoints */
 @media (max-width: 1024px) {
     .hero-title {
@@ -2304,6 +2366,14 @@ a {
 
     .cost-summary-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .plots-portal-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .filters-sidebar {
+        position: static;
     }
 }
 
@@ -2433,6 +2503,20 @@ a {
     .header-actions .btn-phone {
         display: none;
     }
+
+    .property-card {
+        grid-template-columns: 1fr;
+    }
+    
+    .property-img-pane {
+        min-height: 200px;
+        border-right: none;
+        border-bottom: 1px solid var(--border-color);
+    }
+    
+    .admin-stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 480px) {
@@ -2456,5 +2540,14 @@ a {
 
     .grand-total-showcase h2 {
         font-size: 2rem;
+    }
+
+    .admin-stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    #buildEstimatorDrawer {
+        width: 100% !important;
+        padding: 1.5rem;
     }
 }
