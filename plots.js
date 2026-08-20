@@ -202,11 +202,15 @@ document.addEventListener('DOMContentLoaded', () => {
             const priceInLacs = item.price_pkr / 100000;
             const detailsVal = `${cleanBlock}- ${item.plot_no || 'TBD'}@${priceInLacs}`;
 
+            const dateObj = new Date(item.last_checked || '2026-08-20');
+            const formattedDate = `${dateObj.getMonth() + 1}/${dateObj.getDate()}/${dateObj.getFullYear()}`;
+
             tr.innerHTML = `
                 <td><strong style="color: var(--gold-primary); font-family: 'Outfit'; font-size: 0.95rem;">${item.phase}</strong></td>
                 <td><strong>${sizeLabel}</strong></td>
                 <td><code style="background: rgba(255,255,255,0.03); padding: 0.25rem 0.5rem; border-radius: 4px; color: var(--gold-primary); font-weight: 700; font-family: monospace; font-size: 0.85rem;">${detailsVal}</code></td>
                 <td><span style="font-size: 0.8rem; font-weight: 600; color: var(--gold-primary); white-space: nowrap;">Mir Brothers Real Estate Division</span></td>
+                <td><span style="font-size: 0.82rem; color: var(--text-secondary);">${formattedDate}</span></td>
                 <td class="text-center">
                     <div style="display: flex; gap: 0.4rem; justify-content: center; align-items: center;">
                         <button class="btn btn-primary btn-sm build-estimate-trigger" data-id="${item.id}" style="padding: 0.35rem 0.65rem; font-size: 0.72rem; white-space: nowrap;">Build Estimate</button>
