@@ -496,11 +496,20 @@ document.addEventListener('DOMContentLoaded', () => {
     const forceRefreshBtn = document.getElementById('forceRefreshBtn');
     if (forceRefreshBtn) {
         forceRefreshBtn.addEventListener('click', () => {
-            today.setDate(today.getDate() + 1);
-            const dateLabel = today.toLocaleDateString('en-US', { day: 'numeric', month: 'long', year: 'numeric' });
+            const dateLabel = new Date().toLocaleDateString('en-US', { day: 'numeric', month: 'long', year: 'numeric' });
             if (syncLabel) syncLabel.textContent = `Last updated: ${dateLabel}`;
-            processAndRender();
-            alert("Selection updated successfully!");
+            
+            fetch('plots-data.json')
+                .then(res => res.json())
+                .then(data => {
+                    rawListings = data;
+                    processAndRender();
+                    alert("Plot listings fetched fresh from the source database!");
+                })
+                .catch(err => {
+                    console.error("Could not fetch plots-data.json", err);
+                    alert("Failed to fetch fresh items. Using local fallback.");
+                });
         });
     }
 
