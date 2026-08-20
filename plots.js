@@ -187,7 +187,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 <td><span style="font-size: 0.8rem; font-weight: 600; color: var(--gold-primary); white-space: nowrap;">Mir Brothers Real Estate Division</span></td>
                 <td class="text-center">
                     <div style="display: flex; gap: 0.4rem; justify-content: center; align-items: center;">
-                        <a href="https://lahorerealestate.com/plots-for-sale/" target="_blank" class="btn btn-gold-outline btn-sm" style="padding: 0.35rem 0.65rem; font-size: 0.72rem; white-space: nowrap;">View Listing</a>
                         <button class="btn btn-primary btn-sm build-estimate-trigger" data-id="${item.id}" style="padding: 0.35rem 0.65rem; font-size: 0.72rem; white-space: nowrap;">Build Estimate</button>
                     </div>
                 </td>
