@@ -184,7 +184,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     // Load data from JSON
-    fetch('materials.json')
+    fetch('materials.json?t=' + new Date().getTime())
         .then(res => res.json())
         .then(data => {
             platformData = data;

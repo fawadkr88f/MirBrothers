@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (syncLabel) syncLabel.textContent = `Last updated: ${formattedDateStr}`;
 
     // --- LOAD PORTAL DATA ---
-    fetch('plots-data.json')
+    fetch('plots-data.json?t=' + new Date().getTime())
         .then(res => res.json())
         .then(data => {
             rawListings = data;
@@ -353,7 +353,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (adminToggleBtn) {
         adminToggleBtn.addEventListener('click', () => {
-            adminPanelModal.style.display = 'block';
+            const pwd = prompt("Enter Sourcing Panel Admin Password:");
+            if (pwd === "miradmin123" || pwd === "admin123") {
+                adminPanelModal.style.display = 'block';
+            } else if (pwd !== null) {
+                alert("Incorrect password. Access denied.");
+            }
         });
     }
 
@@ -487,7 +492,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 localStorage.removeItem('mir_plot_overrides');
                 adminPanelModal.style.display = 'none';
                 
-                fetch('plots-data.json')
+                fetch('plots-data.json?t=' + new Date().getTime())
                     .then(res => res.json())
                     .then(data => {
                         rawListings = data;
@@ -503,7 +508,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const dateLabel = new Date().toLocaleDateString('en-US', { day: 'numeric', month: 'long', year: 'numeric' });
             if (syncLabel) syncLabel.textContent = `Last updated: ${dateLabel}`;
             
-            fetch('plots-data.json')
+            fetch('plots-data.json?t=' + new Date().getTime())
                 .then(res => res.json())
                 .then(data => {
                     rawListings = data;
