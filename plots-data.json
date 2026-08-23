@@ -1,416 +1,2018 @@
 [
   {
-    "id": "plot_01_lre",
-    "phase": "Phase 6",
-    "block": "Block M",
-    "plot_no": "412",
-    "size_marla": 20,
-    "price_pkr": 75000000,
-    "possession": true,
-    "ready_to_build": true,
-    "features": [
-      "main-boulevard",
-      "possession-ready"
-    ],
-    "source_site": "Lahore Real Estate",
-    "original_url": "https://www.lahorerealestate.com/listings/dha-phase-6-block-m-412",
-    "last_checked": "2026-08-17",
-    "first_seen": "2026-08-05",
-    "status": "active",
-    "description": "Ideal 1 Kanal plot on 150ft main boulevard, possession paid and ready for construction. Solid land, no fill."
-  },
-  {
-    "id": "plot_01_zam",
-    "phase": "Phase 6",
-    "block": "Block M",
-    "plot_no": "412",
-    "size_marla": 20,
-    "price_pkr": 75000000,
-    "possession": true,
-    "ready_to_build": true,
-    "features": [
-      "main-boulevard"
-    ],
-    "source_site": "Zameen",
-    "original_url": "https://www.zameen.com/property/dha-phase-6-block-m-1-kanal-boulevard-plot-10934.html",
-    "last_checked": "2026-08-17",
-    "first_seen": "2026-08-07",
-    "status": "active",
-    "description": "Premium 1 Kanal commercial/residential mixed zoning plot facing the main boulevard in Phase 6 M block."
-  },
-  {
-    "id": "plot_02",
-    "phase": "Phase 8",
-    "block": "Block Y",
-    "plot_no": "125",
-    "size_marla": 10,
-    "price_pkr": 26500000,
-    "possession": true,
-    "ready_to_build": true,
-    "features": [
-      "corner",
-      "park-facing"
-    ],
-    "source_site": "Zameen",
-    "original_url": "https://www.zameen.com/property/dha-phase-8-y-block-10-marla-corner-12344.html",
-    "last_checked": "2026-08-17",
-    "first_seen": "2026-08-10",
-    "status": "active",
-    "description": "Beautiful corner and park facing plot in Phase 8 Y block. Highly secure and ready for immediate construction."
-  },
-  {
-    "id": "plot_03",
-    "phase": "Phase 5",
-    "block": "Block G",
-    "plot_no": "85",
-    "size_marla": 20,
-    "price_pkr": 92000000,
-    "possession": true,
-    "ready_to_build": true,
-    "features": [
-      "possession-ready"
-    ],
-    "source_site": "Lahore Real Estate",
-    "original_url": "https://www.lahorerealestate.com/listings/dha-phase-5-block-g-85",
-    "last_checked": "2026-08-17",
-    "first_seen": "2026-08-01",
-    "status": "active",
-    "description": "1 Kanal solid land in G Block Phase 5. Under-ground wiring and gated enclave ready to shift."
-  },
-  {
-    "id": "plot_04",
-    "phase": "Phase 9 Prism",
-    "block": "Block D",
-    "plot_no": "54-B",
-    "size_marla": 5,
-    "price_pkr": 16500000,
-    "possession": true,
-    "ready_to_build": true,
-    "features": [
-      "park-facing"
-    ],
-    "source_site": "Zameen",
-    "original_url": "https://www.zameen.com/property/dha-phase-9-prism-block-d-5-marla-342.html",
-    "last_checked": "2026-08-17",
-    "first_seen": "2026-08-12",
-    "status": "active",
-    "description": "Superb 5 Marla residential plot near the main gate of Phase 9 Prism, Block D. Possession given."
-  },
-  {
-    "id": "plot_05",
-    "phase": "Phase 11",
-    "block": "Rahbar Block B",
-    "plot_no": "119",
-    "size_marla": 5,
-    "price_pkr": 14000000,
-    "possession": true,
-    "ready_to_build": true,
-    "features": [
-      "corner"
-    ],
-    "source_site": "Zameen",
-    "original_url": "https://www.zameen.com/property/dha-rahbar-phase-11-5-marla-corner-plot-3324.html",
-    "last_checked": "2026-08-17",
-    "first_seen": "2026-08-15",
-    "status": "active",
-    "description": "DHA Rahbar Phase 11 Sector B corner plot. Gas, electricity, and clean water meters already installed."
-  },
-  {
-    "id": "plot_06",
-    "phase": "Phase 6",
-    "block": "Block H",
-    "plot_no": "92",
-    "size_marla": 10,
-    "price_pkr": 24000000,
-    "possession": true,
-    "ready_to_build": true,
-    "features": [],
-    "source_site": "Zameen",
-    "original_url": "https://www.zameen.com/property/dha-phase-6-block-h-10-marla-plot-431.html",
-    "last_checked": "2026-08-17",
-    "first_seen": "2026-08-14",
-    "status": "active",
-    "description": "Standard 10 Marla residential plot in H Block Phase 6. Close to commercial sector, excellent road network."
-  },
-  {
-    "id": "plot_07",
+    "id": "plot_live_001",
     "phase": "Phase 4",
-    "block": "Block CC",
-    "plot_no": "231",
+    "block": "Block KK",
+    "plot_no": "626627",
     "size_marla": 20,
-    "price_pkr": 79000000,
+    "price_pkr": 112500000,
     "possession": true,
     "ready_to_build": true,
     "features": [
       "possession-ready"
     ],
     "source_site": "Lahore Real Estate",
-    "original_url": "https://www.lahorerealestate.com/listings/dha-phase-4-cc-231",
-    "last_checked": "2026-08-17",
-    "first_seen": "2026-08-02",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-22",
     "status": "active",
-    "description": "Established Phase 4 G Block CC 1 Kanal residential site. Level land, ready for immediate brick laying."
+    "description": "Verified plot in Phase 4 Block KK."
   },
   {
-    "id": "plot_08_zam",
-    "phase": "Phase 8",
-    "block": "Block Ivy",
-    "plot_no": "12",
+    "id": "plot_live_002",
+    "phase": "Phase 4",
+    "block": "Block KK",
+    "plot_no": "623",
     "size_marla": 20,
-    "price_pkr": 48000000,
+    "price_pkr": 62500000,
     "possession": true,
     "ready_to_build": true,
     "features": [
-      "corner",
       "possession-ready"
     ],
-    "source_site": "Zameen",
-    "original_url": "https://www.zameen.com/property/dha-phase-8-ivy-green-1-kanal-corner-93421.html",
-    "last_checked": "2026-08-17",
-    "first_seen": "2026-08-11",
-    "status": "active",
-    "description": "Outstanding 1 Kanal corner plot in Ivy Green Phase 8. Level ground, utilities fully operational."
-  },
-  {
-    "id": "plot_08_lre",
-    "phase": "Phase 8",
-    "block": "Block Ivy",
-    "plot_no": "12",
-    "size_marla": 20,
-    "price_pkr": 48000000,
-    "possession": true,
-    "ready_to_build": true,
-    "features": [
-      "corner"
-    ],
     "source_site": "Lahore Real Estate",
-    "original_url": "https://www.lahorerealestate.com/listings/dha-phase-8-ivy-12",
-    "last_checked": "2026-08-17",
-    "first_seen": "2026-08-12",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-22",
     "status": "active",
-    "description": "Ivy Green Block Z-1 (Ivy) 1 Kanal corner plot. High position, no sewage drainage pipeline issues."
+    "description": "Verified plot in Phase 4 Block KK."
   },
   {
-    "id": "plot_09",
-    "phase": "Phase 9 Prism",
-    "block": "Block P",
-    "plot_no": "344",
+    "id": "plot_live_003",
+    "phase": "Phase 5",
+    "block": "Block B",
+    "plot_no": "953",
     "size_marla": 10,
-    "price_pkr": 21000000,
+    "price_pkr": 16000000,
     "possession": true,
     "ready_to_build": true,
-    "features": [],
-    "source_site": "Zameen",
-    "original_url": "https://www.zameen.com/property/dha-phase-9-prism-p-block-10-marla-344.html",
-    "last_checked": "2026-08-17",
-    "first_seen": "2026-08-09",
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-22",
     "status": "active",
-    "description": "Phase 9 Prism P Block 10 Marla plot. Possession paid, boundary walls built in adjacent plots."
+    "description": "Verified plot in Phase 5 Block B."
   },
   {
-    "id": "plot_10",
-    "phase": "Phase 1",
+    "id": "plot_live_004",
+    "phase": "Phase 5",
+    "block": "Block B",
+    "plot_no": "900",
+    "size_marla": 10,
+    "price_pkr": 15500000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-22",
+    "status": "active",
+    "description": "Verified plot in Phase 5 Block B."
+  },
+  {
+    "id": "plot_live_005",
+    "phase": "Phase 5",
+    "block": "Block B",
+    "plot_no": "1090",
+    "size_marla": 10,
+    "price_pkr": 26000000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-22",
+    "status": "active",
+    "description": "Verified plot in Phase 5 Block B."
+  },
+  {
+    "id": "plot_live_006",
+    "phase": "Phase 5",
+    "block": "Block B",
+    "plot_no": "992",
+    "size_marla": 10,
+    "price_pkr": 22500000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-22",
+    "status": "active",
+    "description": "Verified plot in Phase 5 Block B."
+  },
+  {
+    "id": "plot_live_007",
+    "phase": "Phase 5 M Extension",
     "block": "Block M",
-    "plot_no": "77",
-    "size_marla": 10,
-    "price_pkr": 24500000,
-    "possession": true,
-    "ready_to_build": true,
-    "features": [
-      "possession-ready"
-    ],
-    "source_site": "Lahore Real Estate",
-    "original_url": "https://www.lahorerealestate.com/listings/dha-phase-1-m-77",
-    "last_checked": "2026-08-17",
-    "first_seen": "2026-08-04",
-    "status": "active",
-    "description": "Hot deal in Phase 1 Block M. 10 Marla ready to construct residential land, very close to market."
-  },
-  {
-    "id": "plot_11",
-    "phase": "Phase 6",
-    "block": "Block K",
-    "plot_no": "23",
-    "size_marla": 40,
-    "price_pkr": 175000000,
-    "possession": true,
-    "ready_to_build": true,
-    "features": [
-      "main-boulevard",
-      "corner"
-    ],
-    "source_site": "Zameen",
-    "original_url": "https://www.zameen.com/property/dha-phase-6-block-k-2-kanal-corner-9831.html",
-    "last_checked": "2026-08-17",
-    "first_seen": "2026-08-01",
-    "status": "active",
-    "description": "Luxurious 2 Kanal corner plot on Main Boulevard in Phase 6 K Block. Perfect for a grand mansion."
-  },
-  {
-    "id": "plot_12",
-    "phase": "Phase 2",
-    "block": "Block Q",
-    "plot_no": "341",
-    "size_marla": 8,
-    "price_pkr": 25500000,
-    "possession": true,
-    "ready_to_build": true,
-    "features": [],
-    "source_site": "Zameen",
-    "original_url": "https://www.zameen.com/property/dha-phase-2-block-q-8-marla-943.html",
-    "last_checked": "2026-08-17",
-    "first_seen": "2026-08-16",
-    "status": "active",
-    "description": "8 Marla residential land in Phase 2 Q Block. Close to schools, gas connection verified."
-  },
-  {
-    "id": "plot_13",
-    "phase": "Phase 7",
-    "block": "Block T",
-    "plot_no": "506",
+    "plot_no": "114",
     "size_marla": 20,
-    "price_pkr": 52000000,
+    "price_pkr": 42000000,
     "possession": true,
     "ready_to_build": true,
     "features": [
       "possession-ready"
     ],
     "source_site": "Lahore Real Estate",
-    "original_url": "https://www.lahorerealestate.com/listings/dha-phase-7-t-506",
-    "last_checked": "2026-08-17",
-    "first_seen": "2026-08-02",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-22",
     "status": "active",
-    "description": "1 Kanal plot in Block T, Phase 7. Fully developed sector with operational electric lines."
+    "description": "Verified plot in Phase 5 M Extension Block M."
   },
   {
-    "id": "plot_14",
-    "phase": "Phase 9 Prism",
-    "block": "Block Q",
-    "plot_no": "12",
+    "id": "plot_live_008",
+    "phase": "Phase 5 M Extension",
+    "block": "Block M",
+    "plot_no": "791",
+    "size_marla": 20,
+    "price_pkr": 30000000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-22",
+    "status": "active",
+    "description": "Verified plot in Phase 5 M Extension Block M."
+  },
+  {
+    "id": "plot_live_009",
+    "phase": "Phase 5 M Extension",
+    "block": "Block M",
+    "plot_no": "443",
+    "size_marla": 20,
+    "price_pkr": 39000000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-22",
+    "status": "active",
+    "description": "Verified plot in Phase 5 M Extension Block M."
+  },
+  {
+    "id": "plot_live_010",
+    "phase": "Phase 5 M Extension",
+    "block": "Block M",
+    "plot_no": "656",
+    "size_marla": 20,
+    "price_pkr": 31000000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-22",
+    "status": "active",
+    "description": "Verified plot in Phase 5 M Extension Block M."
+  },
+  {
+    "id": "plot_live_011",
+    "phase": "Phase 5 M Extension",
+    "block": "Block M",
+    "plot_no": "197",
+    "size_marla": 20,
+    "price_pkr": 46500000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-22",
+    "status": "active",
+    "description": "Verified plot in Phase 5 M Extension Block M."
+  },
+  {
+    "id": "plot_live_012",
+    "phase": "Phase 5 M Extension",
+    "block": "Block M",
+    "plot_no": "677",
+    "size_marla": 20,
+    "price_pkr": 39500000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-22",
+    "status": "active",
+    "description": "Verified plot in Phase 5 M Extension Block M."
+  },
+  {
+    "id": "plot_live_013",
+    "phase": "Phase 5 M Extension",
+    "block": "Block M",
+    "plot_no": "225",
+    "size_marla": 20,
+    "price_pkr": 47000000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-22",
+    "status": "active",
+    "description": "Verified plot in Phase 5 M Extension Block M."
+  },
+  {
+    "id": "plot_live_014",
+    "phase": "Phase 5 M Extension",
+    "block": "Block M",
+    "plot_no": "528",
+    "size_marla": 20,
+    "price_pkr": 35000000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-22",
+    "status": "active",
+    "description": "Verified plot in Phase 5 M Extension Block M."
+  },
+  {
+    "id": "plot_live_015",
+    "phase": "Phase 5 M Extension",
+    "block": "Block M",
+    "plot_no": "654",
+    "size_marla": 20,
+    "price_pkr": 32500000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-22",
+    "status": "active",
+    "description": "Verified plot in Phase 5 M Extension Block M."
+  },
+  {
+    "id": "plot_live_016",
+    "phase": "Phase 5 M Extension",
+    "block": "Block M",
+    "plot_no": "20",
+    "size_marla": 20,
+    "price_pkr": 69000000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-22",
+    "status": "active",
+    "description": "Verified plot in Phase 5 M Extension Block M."
+  },
+  {
+    "id": "plot_live_017",
+    "phase": "Phase 5 M Extension",
+    "block": "Block M",
+    "plot_no": "54",
+    "size_marla": 20,
+    "price_pkr": 46000000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-22",
+    "status": "active",
+    "description": "Verified plot in Phase 5 M Extension Block M."
+  },
+  {
+    "id": "plot_live_018",
+    "phase": "Phase 5 M Extension",
+    "block": "Block M",
+    "plot_no": "195",
+    "size_marla": 20,
+    "price_pkr": 43000000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-22",
+    "status": "active",
+    "description": "Verified plot in Phase 5 M Extension Block M."
+  },
+  {
+    "id": "plot_live_019",
+    "phase": "Phase 5 M Extension",
+    "block": "Block M",
+    "plot_no": "341",
     "size_marla": 20,
     "price_pkr": 43500000,
     "possession": true,
     "ready_to_build": true,
     "features": [
-      "corner"
-    ],
-    "source_site": "Zameen",
-    "original_url": "https://www.zameen.com/property/dha-phase-9-prism-q-1-kanal-corner-331.html",
-    "last_checked": "2026-08-17",
-    "first_seen": "2026-08-08",
-    "status": "active",
-    "description": "Prime 1 Kanal corner residential plot in Phase 9 Prism, Block Q. Immediate possession paid."
-  },
-  {
-    "id": "plot_15",
-    "phase": "Phase 5",
-    "block": "Block C",
-    "plot_no": "44",
-    "size_marla": 10,
-    "price_pkr": 33000000,
-    "possession": true,
-    "ready_to_build": true,
-    "features": [
-      "park-facing"
-    ],
-    "source_site": "Zameen",
-    "original_url": "https://www.zameen.com/property/dha-phase-5-block-c-10-marla-park-facing-12.html",
-    "last_checked": "2026-08-17",
-    "first_seen": "2026-08-11",
-    "status": "active",
-    "description": "Superb 10 Marla park facing plot in Block C, Phase 5. Under-ground infrastructure."
-  },
-  {
-    "id": "plot_16_file",
-    "phase": "Phase 9 Prism",
-    "block": "Block J",
-    "plot_no": "File-92",
-    "size_marla": 10,
-    "price_pkr": 19000000,
-    "possession": false,
-    "ready_to_build": false,
-    "features": [
-      "non-possession"
-    ],
-    "source_site": "Zameen",
-    "original_url": "https://www.zameen.com/property/dha-phase-9-prism-file-only-233.html",
-    "last_checked": "2026-08-17",
-    "first_seen": "2026-08-18",
-    "status": "active",
-    "description": "10 Marla residential file in Block J. Non-possession plot, excellent for long-term investment."
-  },
-  {
-    "id": "plot_17_nonpos",
-    "phase": "Phase 11",
-    "block": "Sector C",
-    "plot_no": "19",
-    "size_marla": 20,
-    "price_pkr": 39000000,
-    "possession": false,
-    "ready_to_build": false,
-    "features": [
-      "non-possession"
+      "possession-ready"
     ],
     "source_site": "Lahore Real Estate",
-    "original_url": "https://www.lahorerealestate.com/listings/dha-phase-11-c-19",
-    "last_checked": "2026-08-17",
-    "first_seen": "2026-08-01",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-22",
     "status": "active",
-    "description": "1 Kanal plot in Sector C, DHA Rahbar Phase 11. Surcharge paid but possession not yet available."
+    "description": "Verified plot in Phase 5 M Extension Block M."
   },
   {
-    "id": "plot_18",
-    "phase": "Phase 8",
-    "block": "Block S",
-    "plot_no": "233",
-    "size_marla": 10,
-    "price_pkr": 24500000,
-    "possession": true,
-    "ready_to_build": true,
-    "features": [],
-    "source_site": "Zameen",
-    "original_url": "https://www.zameen.com/property/dha-phase-8-block-s-10-marla-plot-343.html",
-    "last_checked": "2026-08-17",
-    "first_seen": "2026-08-09",
-    "status": "active",
-    "description": "10 Marla plot in Phase 8 S Block. Ideal location, clean surroundings and ready for foundation laying."
-  },
-  {
-    "id": "plot_19",
-    "phase": "Phase 6",
-    "block": "Block C",
-    "plot_no": "55",
+    "id": "plot_live_020",
+    "phase": "Phase 5 M Extension",
+    "block": "Block M",
+    "plot_no": "143",
     "size_marla": 20,
-    "price_pkr": 81000000,
+    "price_pkr": 47000000,
     "possession": true,
     "ready_to_build": true,
     "features": [
       "possession-ready"
     ],
-    "source_site": "Zameen",
-    "original_url": "https://www.zameen.com/property/dha-phase-6-block-c-1-kanal-plot-981.html",
-    "last_checked": "2026-08-17",
-    "first_seen": "2026-08-11",
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-22",
     "status": "active",
-    "description": "Premium 1 Kanal plot in Phase 6 Block C. Prime height location, solid land ready for builders."
+    "description": "Verified plot in Phase 5 M Extension Block M."
   },
   {
-    "id": "plot_20",
-    "phase": "Phase 4",
-    "block": "Block AA",
-    "plot_no": "50",
+    "id": "plot_live_021",
+    "phase": "Phase 6",
+    "block": "Block M",
+    "plot_no": "151",
+    "size_marla": 20,
+    "price_pkr": 75000000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-17",
+    "status": "active",
+    "description": "Verified plot in Phase 6 Block M."
+  },
+  {
+    "id": "plot_live_022",
+    "phase": "Phase 6",
+    "block": "Block B",
+    "plot_no": "498",
+    "size_marla": 20,
+    "price_pkr": 75000000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-22",
+    "status": "active",
+    "description": "Verified plot in Phase 6 Block B."
+  },
+  {
+    "id": "plot_live_023",
+    "phase": "Phase 6",
+    "block": "Block N",
+    "plot_no": "461",
+    "size_marla": 20,
+    "price_pkr": 49500000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-22",
+    "status": "active",
+    "description": "Verified plot in Phase 6 Block N."
+  },
+  {
+    "id": "plot_live_024",
+    "phase": "Phase 6",
+    "block": "Block K",
+    "plot_no": "780",
+    "size_marla": 20,
+    "price_pkr": 73000000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-22",
+    "status": "active",
+    "description": "Verified plot in Phase 6 Block K."
+  },
+  {
+    "id": "plot_live_025",
+    "phase": "Phase 6",
+    "block": "Block A",
+    "plot_no": "449",
+    "size_marla": 20,
+    "price_pkr": 65000000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-22",
+    "status": "active",
+    "description": "Verified plot in Phase 6 Block A."
+  },
+  {
+    "id": "plot_live_026",
+    "phase": "Phase 6",
+    "block": "Block L",
+    "plot_no": "713",
+    "size_marla": 20,
+    "price_pkr": 67500000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-22",
+    "status": "active",
+    "description": "Verified plot in Phase 6 Block L."
+  },
+  {
+    "id": "plot_live_027",
+    "phase": "Phase 6",
+    "block": "Block E",
+    "plot_no": "1753",
     "size_marla": 10,
+    "price_pkr": 19000000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-22",
+    "status": "active",
+    "description": "Verified plot in Phase 6 Block E."
+  },
+  {
+    "id": "plot_live_028",
+    "phase": "Phase 6",
+    "block": "Block E",
+    "plot_no": "1694",
+    "size_marla": 5,
+    "price_pkr": 11400000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-22",
+    "status": "active",
+    "description": "Verified plot in Phase 6 Block E."
+  },
+  {
+    "id": "plot_live_029",
+    "phase": "Phase 6",
+    "block": "Block D",
+    "plot_no": "12402",
+    "size_marla": 5,
+    "price_pkr": 21500000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-22",
+    "status": "active",
+    "description": "Verified plot in Phase 6 Block D."
+  },
+  {
+    "id": "plot_live_030",
+    "phase": "Phase 7",
+    "block": "Block Z",
+    "plot_no": "331",
+    "size_marla": 20,
+    "price_pkr": 45000000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-17",
+    "status": "active",
+    "description": "Verified plot in Phase 7 Block Z."
+  },
+  {
+    "id": "plot_live_031",
+    "phase": "Phase 7",
+    "block": "Block Y",
+    "plot_no": "3707",
+    "size_marla": 10,
+    "price_pkr": 24500000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-16",
+    "status": "active",
+    "description": "Verified plot in Phase 7 Block Y."
+  },
+  {
+    "id": "plot_live_032",
+    "phase": "Phase 8",
+    "block": "Block X",
+    "plot_no": "55",
+    "size_marla": 20,
+    "price_pkr": 72500000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-17",
+    "status": "active",
+    "description": "Verified plot in Phase 8 Block X."
+  },
+  {
+    "id": "plot_live_033",
+    "phase": "Phase 8",
+    "block": "Block X",
+    "plot_no": "896",
+    "size_marla": 20,
+    "price_pkr": 39000000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-17",
+    "status": "active",
+    "description": "Verified plot in Phase 8 Block X."
+  },
+  {
+    "id": "plot_live_034",
+    "phase": "Phase 8",
+    "block": "Block X",
+    "plot_no": "996",
+    "size_marla": 20,
+    "price_pkr": 36500000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-17",
+    "status": "active",
+    "description": "Verified plot in Phase 8 Block X."
+  },
+  {
+    "id": "plot_live_035",
+    "phase": "Phase 8",
+    "block": "Block T",
+    "plot_no": "1262",
+    "size_marla": 20,
+    "price_pkr": 63500000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-17",
+    "status": "active",
+    "description": "Verified plot in Phase 8 Block T."
+  },
+  {
+    "id": "plot_live_036",
+    "phase": "Phase 8",
+    "block": "Block S",
+    "plot_no": "1032",
+    "size_marla": 20,
+    "price_pkr": 45000000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-22",
+    "status": "active",
+    "description": "Verified plot in Phase 8 Block S."
+  },
+  {
+    "id": "plot_live_037",
+    "phase": "Phase 8",
+    "block": "Block Y",
+    "plot_no": "206",
+    "size_marla": 10,
+    "price_pkr": 19500000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-16",
+    "status": "active",
+    "description": "Verified plot in Phase 8 Block Y."
+  },
+  {
+    "id": "plot_live_038",
+    "phase": "Phase 8",
+    "block": "Block Y",
+    "plot_no": "58",
+    "size_marla": 10,
+    "price_pkr": 13500000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-17",
+    "status": "active",
+    "description": "Verified plot in Phase 8 Block Y."
+  },
+  {
+    "id": "plot_live_039",
+    "phase": "Phase 8",
+    "block": "Block Z5",
+    "plot_no": "1028",
+    "size_marla": 5,
+    "price_pkr": 9000000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-17",
+    "status": "active",
+    "description": "Verified plot in Phase 8 Block Z5."
+  },
+  {
+    "id": "plot_live_040",
+    "phase": "Phase 8",
+    "block": "Block Z4",
+    "plot_no": "1012",
+    "size_marla": 5,
+    "price_pkr": 9900000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-17",
+    "status": "active",
+    "description": "Verified plot in Phase 8 Block Z4."
+  },
+  {
+    "id": "plot_live_041",
+    "phase": "Phase 9 Prism",
+    "block": "Block N",
+    "plot_no": "140",
+    "size_marla": 20,
+    "price_pkr": 26500000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-16",
+    "status": "active",
+    "description": "Verified plot in Phase 9 Prism Block N."
+  },
+  {
+    "id": "plot_live_042",
+    "phase": "Phase 9 Prism",
+    "block": "Block N",
+    "plot_no": "70",
+    "size_marla": 20,
+    "price_pkr": 21500000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-16",
+    "status": "active",
+    "description": "Verified plot in Phase 9 Prism Block N."
+  },
+  {
+    "id": "plot_live_043",
+    "phase": "Phase 9 Prism",
+    "block": "Block F",
+    "plot_no": "1793",
+    "size_marla": 20,
+    "price_pkr": 35000000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-17",
+    "status": "active",
+    "description": "Verified plot in Phase 9 Prism Block F."
+  },
+  {
+    "id": "plot_live_044",
+    "phase": "Phase 9 Prism",
+    "block": "Block L",
+    "plot_no": "528",
+    "size_marla": 20,
+    "price_pkr": 19500000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-17",
+    "status": "active",
+    "description": "Verified plot in Phase 9 Prism Block L."
+  },
+  {
+    "id": "plot_live_045",
+    "phase": "Phase 9 Prism",
+    "block": "Block H",
+    "plot_no": "509",
+    "size_marla": 20,
     "price_pkr": 27500000,
     "possession": true,
     "ready_to_build": true,
     "features": [
-      "corner"
+      "possession-ready"
     ],
     "source_site": "Lahore Real Estate",
-    "original_url": "https://www.lahorerealestate.com/listings/dha-phase-4-aa-50",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
     "last_checked": "2026-08-17",
-    "first_seen": "2026-08-03",
     "status": "active",
-    "description": "10 Marla corner plot in Block AA, Phase 4. Peaceful lane, fully populated sector."
+    "description": "Verified plot in Phase 9 Prism Block H."
+  },
+  {
+    "id": "plot_live_046",
+    "phase": "Phase 9 Prism",
+    "block": "Block A",
+    "plot_no": "571",
+    "size_marla": 20,
+    "price_pkr": 40000000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-17",
+    "status": "active",
+    "description": "Verified plot in Phase 9 Prism Block A."
+  },
+  {
+    "id": "plot_live_047",
+    "phase": "Phase 9 Prism",
+    "block": "Block A",
+    "plot_no": "498",
+    "size_marla": 20,
+    "price_pkr": 40000000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-17",
+    "status": "active",
+    "description": "Verified plot in Phase 9 Prism Block A."
+  },
+  {
+    "id": "plot_live_048",
+    "phase": "Phase 9 Prism",
+    "block": "Block F",
+    "plot_no": "418",
+    "size_marla": 20,
+    "price_pkr": 33000000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-17",
+    "status": "active",
+    "description": "Verified plot in Phase 9 Prism Block F."
+  },
+  {
+    "id": "plot_live_049",
+    "phase": "Phase 9 Prism",
+    "block": "Block G",
+    "plot_no": "514",
+    "size_marla": 20,
+    "price_pkr": 40000000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-17",
+    "status": "active",
+    "description": "Verified plot in Phase 9 Prism Block G."
+  },
+  {
+    "id": "plot_live_050",
+    "phase": "Phase 9 Prism",
+    "block": "Block P",
+    "plot_no": "691",
+    "size_marla": 20,
+    "price_pkr": 18500000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-17",
+    "status": "active",
+    "description": "Verified plot in Phase 9 Prism Block P."
+  },
+  {
+    "id": "plot_live_051",
+    "phase": "Phase 9 Prism",
+    "block": "Block K",
+    "plot_no": "316",
+    "size_marla": 20,
+    "price_pkr": 20000000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-18",
+    "status": "active",
+    "description": "Verified plot in Phase 9 Prism Block K."
+  },
+  {
+    "id": "plot_live_052",
+    "phase": "Phase 9 Prism",
+    "block": "Block D",
+    "plot_no": "724",
+    "size_marla": 20,
+    "price_pkr": 29000000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-19",
+    "status": "active",
+    "description": "Verified plot in Phase 9 Prism Block D."
+  },
+  {
+    "id": "plot_live_053",
+    "phase": "Phase 9 Prism",
+    "block": "Block G",
+    "plot_no": "301",
+    "size_marla": 20,
+    "price_pkr": 39500000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-19",
+    "status": "active",
+    "description": "Verified plot in Phase 9 Prism Block G."
+  },
+  {
+    "id": "plot_live_054",
+    "phase": "Phase 9 Prism",
+    "block": "Block D",
+    "plot_no": "329",
+    "size_marla": 20,
+    "price_pkr": 35500000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-19",
+    "status": "active",
+    "description": "Verified plot in Phase 9 Prism Block D."
+  },
+  {
+    "id": "plot_live_055",
+    "phase": "Phase 9 Prism",
+    "block": "Block M",
+    "plot_no": "866",
+    "size_marla": 20,
+    "price_pkr": 25000000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-19",
+    "status": "active",
+    "description": "Verified plot in Phase 9 Prism Block M."
+  },
+  {
+    "id": "plot_live_056",
+    "phase": "Phase 9 Prism",
+    "block": "Block P",
+    "plot_no": "40",
+    "size_marla": 20,
+    "price_pkr": 35000000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-19",
+    "status": "active",
+    "description": "Verified plot in Phase 9 Prism Block P."
+  },
+  {
+    "id": "plot_live_057",
+    "phase": "Phase 9 Prism",
+    "block": "Block A",
+    "plot_no": "382",
+    "size_marla": 20,
+    "price_pkr": 35000000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-19",
+    "status": "active",
+    "description": "Verified plot in Phase 9 Prism Block A."
+  },
+  {
+    "id": "plot_live_058",
+    "phase": "Phase 9 Prism",
+    "block": "Block F",
+    "plot_no": "1842",
+    "size_marla": 20,
+    "price_pkr": 30000000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-19",
+    "status": "active",
+    "description": "Verified plot in Phase 9 Prism Block F."
+  },
+  {
+    "id": "plot_live_059",
+    "phase": "Phase 9 Prism",
+    "block": "Block G",
+    "plot_no": "522",
+    "size_marla": 20,
+    "price_pkr": 37500000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-19",
+    "status": "active",
+    "description": "Verified plot in Phase 9 Prism Block G."
+  },
+  {
+    "id": "plot_live_060",
+    "phase": "Phase 9 Prism",
+    "block": "Block G",
+    "plot_no": "742",
+    "size_marla": 20,
+    "price_pkr": 33000000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-19",
+    "status": "active",
+    "description": "Verified plot in Phase 9 Prism Block G."
+  },
+  {
+    "id": "plot_live_061",
+    "phase": "Phase 9 Prism",
+    "block": "Block C",
+    "plot_no": "770",
+    "size_marla": 20,
+    "price_pkr": 27700000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-19",
+    "status": "active",
+    "description": "Verified plot in Phase 9 Prism Block C."
+  },
+  {
+    "id": "plot_live_062",
+    "phase": "Phase 9 Prism",
+    "block": "Block H",
+    "plot_no": "648",
+    "size_marla": 20,
+    "price_pkr": 27500000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-19",
+    "status": "active",
+    "description": "Verified plot in Phase 9 Prism Block H."
+  },
+  {
+    "id": "plot_live_063",
+    "phase": "Phase 9 Prism",
+    "block": "Block H",
+    "plot_no": "1228",
+    "size_marla": 20,
+    "price_pkr": 28500000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-19",
+    "status": "active",
+    "description": "Verified plot in Phase 9 Prism Block H."
+  },
+  {
+    "id": "plot_live_064",
+    "phase": "Phase 9 Prism",
+    "block": "Block N",
+    "plot_no": "1246",
+    "size_marla": 20,
+    "price_pkr": 27500000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-19",
+    "status": "active",
+    "description": "Verified plot in Phase 9 Prism Block N."
+  },
+  {
+    "id": "plot_live_065",
+    "phase": "Phase 9 Prism",
+    "block": "Block P",
+    "plot_no": "1044",
+    "size_marla": 20,
+    "price_pkr": 31500000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-19",
+    "status": "active",
+    "description": "Verified plot in Phase 9 Prism Block P."
+  },
+  {
+    "id": "plot_live_066",
+    "phase": "Phase 9 Prism",
+    "block": "Block E",
+    "plot_no": "939",
+    "size_marla": 20,
+    "price_pkr": 20000000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-19",
+    "status": "active",
+    "description": "Verified plot in Phase 9 Prism Block E."
+  },
+  {
+    "id": "plot_live_067",
+    "phase": "Phase 9 Prism",
+    "block": "Block H",
+    "plot_no": "527",
+    "size_marla": 20,
+    "price_pkr": 31000000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-19",
+    "status": "active",
+    "description": "Verified plot in Phase 9 Prism Block H."
+  },
+  {
+    "id": "plot_live_068",
+    "phase": "Phase 9 Prism",
+    "block": "Block M",
+    "plot_no": "370",
+    "size_marla": 20,
+    "price_pkr": 31000000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-19",
+    "status": "active",
+    "description": "Verified plot in Phase 9 Prism Block M."
+  },
+  {
+    "id": "plot_live_069",
+    "phase": "Phase 9 Prism",
+    "block": "Block E",
+    "plot_no": "788",
+    "size_marla": 20,
+    "price_pkr": 33000000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-19",
+    "status": "active",
+    "description": "Verified plot in Phase 9 Prism Block E."
+  },
+  {
+    "id": "plot_live_070",
+    "phase": "Phase 9 Prism",
+    "block": "Block E",
+    "plot_no": "60",
+    "size_marla": 20,
+    "price_pkr": 31500000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-19",
+    "status": "active",
+    "description": "Verified plot in Phase 9 Prism Block E."
+  },
+  {
+    "id": "plot_live_071",
+    "phase": "Phase 9 Prism",
+    "block": "Block M",
+    "plot_no": "437",
+    "size_marla": 20,
+    "price_pkr": 31000000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-19",
+    "status": "active",
+    "description": "Verified plot in Phase 9 Prism Block M."
+  },
+  {
+    "id": "plot_live_072",
+    "phase": "Phase 9 Prism",
+    "block": "Block Q",
+    "plot_no": "908",
+    "size_marla": 20,
+    "price_pkr": 41500000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-19",
+    "status": "active",
+    "description": "Verified plot in Phase 9 Prism Block Q."
+  },
+  {
+    "id": "plot_live_073",
+    "phase": "Phase 9 Prism",
+    "block": "Block F",
+    "plot_no": "99",
+    "size_marla": 20,
+    "price_pkr": 32500000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-19",
+    "status": "active",
+    "description": "Verified plot in Phase 9 Prism Block F."
+  },
+  {
+    "id": "plot_live_074",
+    "phase": "Phase 9 Prism",
+    "block": "Block H",
+    "plot_no": "355",
+    "size_marla": 20,
+    "price_pkr": 36500000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-19",
+    "status": "active",
+    "description": "Verified plot in Phase 9 Prism Block H."
+  },
+  {
+    "id": "plot_live_075",
+    "phase": "Phase 9 Prism",
+    "block": "Block H",
+    "plot_no": "1509",
+    "size_marla": 20,
+    "price_pkr": 26500000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-19",
+    "status": "active",
+    "description": "Verified plot in Phase 9 Prism Block H."
+  },
+  {
+    "id": "plot_live_076",
+    "phase": "Phase 9 Prism",
+    "block": "Block F",
+    "plot_no": "984",
+    "size_marla": 20,
+    "price_pkr": 34700000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-19",
+    "status": "active",
+    "description": "Verified plot in Phase 9 Prism Block F."
+  },
+  {
+    "id": "plot_live_077",
+    "phase": "Phase 9 Prism",
+    "block": "Block A",
+    "plot_no": "327",
+    "size_marla": 20,
+    "price_pkr": 36000000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-21",
+    "status": "active",
+    "description": "Verified plot in Phase 9 Prism Block A."
+  },
+  {
+    "id": "plot_live_078",
+    "phase": "Phase 9 Prism",
+    "block": "Block A",
+    "plot_no": "214",
+    "size_marla": 20,
+    "price_pkr": 34500000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-21",
+    "status": "active",
+    "description": "Verified plot in Phase 9 Prism Block A."
+  },
+  {
+    "id": "plot_live_079",
+    "phase": "Phase 9 Prism",
+    "block": "Block Q",
+    "plot_no": "806",
+    "size_marla": 20,
+    "price_pkr": 40000000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-21",
+    "status": "active",
+    "description": "Verified plot in Phase 9 Prism Block Q."
+  },
+  {
+    "id": "plot_live_080",
+    "phase": "Phase 9 Prism",
+    "block": "Block Q",
+    "plot_no": "72",
+    "size_marla": 20,
+    "price_pkr": 26500000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-21",
+    "status": "active",
+    "description": "Verified plot in Phase 9 Prism Block Q."
+  },
+  {
+    "id": "plot_live_081",
+    "phase": "Phase 9 Prism",
+    "block": "Block Q",
+    "plot_no": "107",
+    "size_marla": 20,
+    "price_pkr": 36500000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-21",
+    "status": "active",
+    "description": "Verified plot in Phase 9 Prism Block Q."
+  },
+  {
+    "id": "plot_live_082",
+    "phase": "Phase 9 Prism",
+    "block": "Block Q",
+    "plot_no": "500",
+    "size_marla": 20,
+    "price_pkr": 33500000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-21",
+    "status": "active",
+    "description": "Verified plot in Phase 9 Prism Block Q."
+  },
+  {
+    "id": "plot_live_083",
+    "phase": "Phase 9 Prism",
+    "block": "Block G",
+    "plot_no": "782",
+    "size_marla": 20,
+    "price_pkr": 33000000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-22",
+    "status": "active",
+    "description": "Verified plot in Phase 9 Prism Block G."
+  },
+  {
+    "id": "plot_live_084",
+    "phase": "Phase 9 Prism",
+    "block": "Block R",
+    "plot_no": "2745",
+    "size_marla": 10,
+    "price_pkr": 23500000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-16",
+    "status": "active",
+    "description": "Verified plot in Phase 9 Prism Block R."
+  },
+  {
+    "id": "plot_live_085",
+    "phase": "Phase 9 Prism",
+    "block": "Block L",
+    "plot_no": "1587",
+    "size_marla": 10,
+    "price_pkr": 13500000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-16",
+    "status": "active",
+    "description": "Verified plot in Phase 9 Prism Block L."
+  },
+  {
+    "id": "plot_live_086",
+    "phase": "Phase 9 Prism",
+    "block": "Block L",
+    "plot_no": "1549",
+    "size_marla": 10,
+    "price_pkr": 12000000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-17",
+    "status": "active",
+    "description": "Verified plot in Phase 9 Prism Block L."
+  },
+  {
+    "id": "plot_live_087",
+    "phase": "Phase 9 Prism",
+    "block": "Block K",
+    "plot_no": "876",
+    "size_marla": 10,
+    "price_pkr": 21000000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-18",
+    "status": "active",
+    "description": "Verified plot in Phase 9 Prism Block K."
+  },
+  {
+    "id": "plot_live_088",
+    "phase": "Phase 9 Prism",
+    "block": "Block K",
+    "plot_no": "160",
+    "size_marla": 10,
+    "price_pkr": 18000000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-18",
+    "status": "active",
+    "description": "Verified plot in Phase 9 Prism Block K."
+  },
+  {
+    "id": "plot_live_089",
+    "phase": "Phase 9 Prism",
+    "block": "Block R",
+    "plot_no": "2733",
+    "size_marla": 10,
+    "price_pkr": 20000000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-18",
+    "status": "active",
+    "description": "Verified plot in Phase 9 Prism Block R."
+  },
+  {
+    "id": "plot_live_090",
+    "phase": "Phase 9 Prism",
+    "block": "Block K",
+    "plot_no": "1745",
+    "size_marla": 10,
+    "price_pkr": 19500000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-18",
+    "status": "active",
+    "description": "Verified plot in Phase 9 Prism Block K."
+  },
+  {
+    "id": "plot_live_091",
+    "phase": "Phase 9 Prism",
+    "block": "Block J",
+    "plot_no": "248",
+    "size_marla": 10,
+    "price_pkr": 18500000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-18",
+    "status": "active",
+    "description": "Verified plot in Phase 9 Prism Block J."
+  },
+  {
+    "id": "plot_live_092",
+    "phase": "Phase 9 Prism",
+    "block": "Block C",
+    "plot_no": "1718",
+    "size_marla": 10,
+    "price_pkr": 17500000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-19",
+    "status": "active",
+    "description": "Verified plot in Phase 9 Prism Block C."
+  },
+  {
+    "id": "plot_live_093",
+    "phase": "Phase 9 Prism",
+    "block": "Block R",
+    "plot_no": "2645",
+    "size_marla": 5,
+    "price_pkr": 11500000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-16",
+    "status": "active",
+    "description": "Verified plot in Phase 9 Prism Block R."
+  },
+  {
+    "id": "plot_live_094",
+    "phase": "Phase 9 Prism",
+    "block": "Block R",
+    "plot_no": "2152",
+    "size_marla": 5,
+    "price_pkr": 11500000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-16",
+    "status": "active",
+    "description": "Verified plot in Phase 9 Prism Block R."
+  },
+  {
+    "id": "plot_live_095",
+    "phase": "Phase 9 Prism",
+    "block": "Block R",
+    "plot_no": "1800",
+    "size_marla": 5,
+    "price_pkr": 10000000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-16",
+    "status": "active",
+    "description": "Verified plot in Phase 9 Prism Block R."
+  },
+  {
+    "id": "plot_live_096",
+    "phase": "Phase 9 Prism",
+    "block": "Block K",
+    "plot_no": "1449",
+    "size_marla": 5,
+    "price_pkr": 10800000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-16",
+    "status": "active",
+    "description": "Verified plot in Phase 9 Prism Block K."
+  },
+  {
+    "id": "plot_live_097",
+    "phase": "Phase 9 Prism",
+    "block": "Block J",
+    "plot_no": "680",
+    "size_marla": 5,
+    "price_pkr": 8500000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-16",
+    "status": "active",
+    "description": "Verified plot in Phase 9 Prism Block J."
+  },
+  {
+    "id": "plot_live_098",
+    "phase": "Phase 9 Prism",
+    "block": "Block K",
+    "plot_no": "1031",
+    "size_marla": 5,
+    "price_pkr": 10700000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-17",
+    "status": "active",
+    "description": "Verified plot in Phase 9 Prism Block K."
+  },
+  {
+    "id": "plot_live_099",
+    "phase": "Phase 9 Prism",
+    "block": "Block R",
+    "plot_no": "836",
+    "size_marla": 5,
+    "price_pkr": 10400000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-17",
+    "status": "active",
+    "description": "Verified plot in Phase 9 Prism Block R."
+  },
+  {
+    "id": "plot_live_100",
+    "phase": "Phase 9 Prism",
+    "block": "Block P",
+    "plot_no": "76023",
+    "size_marla": 5,
+    "price_pkr": 9000000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-19",
+    "status": "active",
+    "description": "Verified plot in Phase 9 Prism Block P."
+  },
+  {
+    "id": "plot_live_101",
+    "phase": "Phase 9 Prism",
+    "block": "Block R",
+    "plot_no": "2626",
+    "size_marla": 5,
+    "price_pkr": 11500000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-19",
+    "status": "active",
+    "description": "Verified plot in Phase 9 Prism Block R."
+  },
+  {
+    "id": "plot_live_102",
+    "phase": "Phase 9 Prism",
+    "block": "Block R",
+    "plot_no": "2555",
+    "size_marla": 5,
+    "price_pkr": 12000000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-19",
+    "status": "active",
+    "description": "Verified plot in Phase 9 Prism Block R."
+  },
+  {
+    "id": "plot_live_103",
+    "phase": "Phase 9 Prism",
+    "block": "Block K",
+    "plot_no": "1405",
+    "size_marla": 5,
+    "price_pkr": 10000000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-19",
+    "status": "active",
+    "description": "Verified plot in Phase 9 Prism Block K."
+  },
+  {
+    "id": "plot_live_104",
+    "phase": "Phase 9 Prism",
+    "block": "Block K",
+    "plot_no": "1642",
+    "size_marla": 5,
+    "price_pkr": 12200000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-19",
+    "status": "active",
+    "description": "Verified plot in Phase 9 Prism Block K."
+  },
+  {
+    "id": "plot_live_105",
+    "phase": "Phase 9 Town",
+    "block": "Block D",
+    "plot_no": "1676",
+    "size_marla": 5,
+    "price_pkr": 14500000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-16",
+    "status": "active",
+    "description": "Verified plot in Phase 9 Town Block D."
+  },
+  {
+    "id": "plot_live_106",
+    "phase": "Phase 9 Town",
+    "block": "Block D",
+    "plot_no": "73124",
+    "size_marla": 5,
+    "price_pkr": 14500000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-16",
+    "status": "active",
+    "description": "Verified plot in Phase 9 Town Block D."
+  },
+  {
+    "id": "plot_live_107",
+    "phase": "Phase 9 Town",
+    "block": "Block D",
+    "plot_no": "1450",
+    "size_marla": 5,
+    "price_pkr": 14000000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-16",
+    "status": "active",
+    "description": "Verified plot in Phase 9 Town Block D."
+  },
+  {
+    "id": "plot_live_108",
+    "phase": "Phase 9 Town",
+    "block": "Block C",
+    "plot_no": "1295",
+    "size_marla": 5,
+    "price_pkr": 15500000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-16",
+    "status": "active",
+    "description": "Verified plot in Phase 9 Town Block C."
+  },
+  {
+    "id": "plot_live_109",
+    "phase": "Phase 9 Town",
+    "block": "Block B",
+    "plot_no": "841",
+    "size_marla": 5,
+    "price_pkr": 16500000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-16",
+    "status": "active",
+    "description": "Verified plot in Phase 9 Town Block B."
+  },
+  {
+    "id": "plot_live_110",
+    "phase": "Phase 9 Town",
+    "block": "Block E",
+    "plot_no": "147",
+    "size_marla": 5,
+    "price_pkr": 16800000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-16",
+    "status": "active",
+    "description": "Verified plot in Phase 9 Town Block E."
+  },
+  {
+    "id": "plot_live_111",
+    "phase": "Phase 9 Town",
+    "block": "Block A",
+    "plot_no": "43",
+    "size_marla": 5,
+    "price_pkr": 15800000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-16",
+    "status": "active",
+    "description": "Verified plot in Phase 9 Town Block A."
+  },
+  {
+    "id": "plot_live_112",
+    "phase": "Phase 9 Town",
+    "block": "Block B",
+    "plot_no": "13645",
+    "size_marla": 5,
+    "price_pkr": 9000000,
+    "possession": true,
+    "ready_to_build": true,
+    "features": [
+      "possession-ready"
+    ],
+    "source_site": "Lahore Real Estate",
+    "original_url": "https://lahorerealestate.com/plots-for-sale/",
+    "last_checked": "2026-08-16",
+    "status": "active",
+    "description": "Verified plot in Phase 9 Town Block B."
   }
 ]
