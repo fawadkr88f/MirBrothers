@@ -14,17 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (syncLabel) syncLabel.textContent = `Last updated: ${formattedDateStr}`;
 
     // --- LOAD PORTAL DATA ---
-    fetch('plots-data.json?t=' + new Date().getTime())
-        .then(res => res.json())
-        .then(data => {
-            rawListings = data;
-            processAndRender();
-        })
-        .catch(err => {
-            console.error("Could not fetch plots-data.json", err);
-            rawListings = getFallbackRegistry();
-            processAndRender();
-        });
+    fetchLivePlots(false);
 
     function processAndRender() {
         applyAdminOverrides();
@@ -502,141 +492,176 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    const forceRefreshBtn = document.getElementById('forceRefreshBtn');
-    if (forceRefreshBtn) {
-        forceRefreshBtn.addEventListener('click', () => {
-            const originalText = forceRefreshBtn.innerHTML;
+    // --- LIVE SOURCED PLOTS ENGINE ---
+    function fetchLivePlots(showSuccessAlert = false) {
+        const targetUrl = 'https://lahorerealestate.com/plots-for-sale/?nocache=' + new Date().getTime();
+        const corsProxyUrl1 = 'https://corsproxy.io/?' + encodeURIComponent(targetUrl);
+        const corsProxyUrl2 = 'https://api.allorigins.win/raw?url=' + encodeURIComponent(targetUrl);
+
+        const forceRefreshBtn = document.getElementById('forceRefreshBtn');
+        let originalText = '';
+        if (forceRefreshBtn) {
+            originalText = forceRefreshBtn.innerHTML;
             forceRefreshBtn.innerHTML = `
                 <svg class="spinner" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 4px; vertical-align: middle; display: inline-block;"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/></svg>
                 Fetching live...
             `;
             forceRefreshBtn.disabled = true;
+        }
 
-            const proxyUrl = 'https://api.allorigins.win/raw?url=' + encodeURIComponent('https://lahorerealestate.com/plots-for-sale/');
-            fetch(proxyUrl)
-                .then(res => {
-                    if (!res.ok) throw new Error("Proxy error");
-                    return res.text();
-                })
-                .then(htmlText => {
-                    const parser = new DOMParser();
-                    const doc = parser.parseFromString(htmlText, 'text/html');
-                    const rows = doc.querySelectorAll('tr');
-                    
-                    const listings = [];
-                    let plot_counter = 1;
-                    
-                    rows.forEach(tr => {
-                        const td_cells = tr.querySelectorAll('td');
-                        if (td_cells.length < 4) return;
-                        
-                        const phase = td_cells[0].textContent.trim();
-                        const size_str = td_cells[1].textContent.trim();
-                        const details_str = td_cells[2].textContent.trim();
-                        const updated_str = td_cells[3].textContent.trim();
-                        
-                        // Filter DHA Lahore
-                        const phase_lower = phase.toLowerCase();
-                        if (!phase_lower.includes("dha")) return;
-                        
-                        // Size check
-                        let size_marla = null;
-                        if (size_str.toLowerCase().includes("5 marla")) {
-                            size_marla = 5;
-                        } else if (size_str.toLowerCase().includes("10 marla")) {
-                            size_marla = 10;
-                        } else if (size_str.toLowerCase().includes("1 kanal")) {
-                            size_marla = 20;
-                        }
-                        
-                        if (size_marla === null) return;
-                        
-                        if (!details_str.includes("@")) return;
-                        
-                        const parts = details_str.split("@");
-                        const left_part = parts[0].trim();
-                        const right_part = parts[1].trim();
-                        
-                        // Parse price (in Lacs)
-                        const price_num_match = right_part.match(/[\d\.]+/);
-                        if (!price_num_match) return;
-                        
-                        const price_val = parseFloat(price_num_match[0]);
-                        const price_pkr = Math.round(price_val * 100000);
-                        
-                        // Parse block and plot
-                        let block_val = "Block";
-                        let plot_no = "TBD";
-                        if (left_part.includes("-")) {
-                            const b_parts = left_part.split("-");
-                            block_val = "Block " + b_parts[0].trim();
-                            plot_no = b_parts[1].trim();
-                        } else {
-                            block_val = left_part.trim();
-                        }
-                        
-                        // Parse date
-                        const date_match = updated_str.match(/(\d{1,2})\/(\d{1,2})\/(\d{4})/);
-                        let last_checked = new Date().toISOString().split('T')[0];
-                        if (date_match) {
-                            const mm = parseInt(date_match[1], 10);
-                            const dd = parseInt(date_match[2], 10);
-                            const yyyy = parseInt(date_match[3], 10);
-                            last_checked = `${yyyy}-${String(mm).padStart(2, '0')}-${String(dd).padStart(2, '0')}`;
-                        }
-                        
-                        const clean_phase = phase.replace("DHA Lahore ", "").replace("DHA ", "").trim();
-                        
-                        listings.push({
-                            id: "plot_live_" + plot_counter++,
-                            phase: clean_phase,
-                            block: block_val,
-                            plot_no: plot_no,
-                            size_marla: size_marla,
-                            price_pkr: price_pkr,
-                            possession: true,
-                            ready_to_build: true,
-                            features: ["possession-ready"],
-                            source_site: "Lahore Real Estate",
-                            original_url: "https://lahorerealestate.com/plots-for-sale/",
-                            last_checked: last_checked,
-                            status: "active",
-                            description: `Verified plot in ${clean_phase} ${block_val}.`
-                        });
+        // Try Proxy 1 (corsproxy.io)
+        fetch(corsProxyUrl1)
+            .then(res => {
+                if (!res.ok) throw new Error("Proxy 1 failed");
+                return res.text();
+            })
+            .then(html => {
+                parseAndLoadHTML(html, "Live Sourcing (via Proxy 1)");
+                if (showSuccessAlert) alert("Plot listings updated successfully from live Lahore Real Estate sheets!");
+            })
+            .catch(err => {
+                console.warn("Proxy 1 failed, trying Proxy 2 (allorigins)...", err);
+                // Try Proxy 2 (allorigins)
+                return fetch(corsProxyUrl2)
+                    .then(res => {
+                        if (!res.ok) throw new Error("Proxy 2 failed");
+                        return res.text();
+                    })
+                    .then(html => {
+                        parseAndLoadHTML(html, "Live Sourcing (via Proxy 2)");
+                        if (showSuccessAlert) alert("Plot listings updated successfully from live Lahore Real Estate sheets!");
                     });
-                    
-                    if (listings.length > 0) {
-                        rawListings = listings;
+            })
+            .catch(err => {
+                console.warn("All live proxies failed, falling back to static plots-data.json", err);
+                // Fallback to static JSON file
+                return fetch('plots-data.json?t=' + new Date().getTime())
+                    .then(res => res.json())
+                    .then(data => {
+                        rawListings = data;
                         processAndRender();
-                        
-                        // Update last updated sync Label to today's date
-                        const dateLabel = new Date().toLocaleDateString('en-US', { day: 'numeric', month: 'long', year: 'numeric' });
-                        if (syncLabel) syncLabel.textContent = `Last updated: ${dateLabel}`;
-                        
-                        alert("Successfully updated and loaded " + listings.length + " fresh plot listings directly from Lahore Real Estate!");
-                    } else {
-                        throw new Error("No listings parsed");
-                    }
-                })
-                .catch(err => {
-                    console.warn("Real-time proxy fetch failed, falling back to static plots-data.json", err);
-                    // Fallback to static plots-data.json
-                    fetch('plots-data.json?t=' + new Date().getTime())
-                        .then(res => res.json())
-                        .then(data => {
-                            rawListings = data;
-                            processAndRender();
-                            alert("Loaded latest verified registry plots from cache!");
-                        })
-                        .catch(err2 => {
-                            console.error("Fallback fetch failed", err2);
-                            alert("Failed to refresh plots. Check your connection.");
-                        });
-                })
-                .finally(() => {
+                        if (showSuccessAlert) alert("Reloaded latest verified registry plots from cache.");
+                    })
+                    .catch(err2 => {
+                        console.error("Fallback fetch failed", err2);
+                        rawListings = getFallbackRegistry();
+                        processAndRender();
+                        if (showSuccessAlert) alert("Failed to fetch fresh items. Using offline fallback.");
+                    });
+            })
+            .finally(() => {
+                if (forceRefreshBtn) {
                     forceRefreshBtn.innerHTML = originalText;
                     forceRefreshBtn.disabled = false;
-                });
+                }
+            });
+    }
+
+    function parseAndLoadHTML(htmlText, sourceName) {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(htmlText, 'text/html');
+        const rows = doc.querySelectorAll('tr');
+        
+        const listings = [];
+        let plot_counter = 1;
+        
+        rows.forEach(tr => {
+            const td_cells = tr.querySelectorAll('td');
+            if (td_cells.length < 4) return;
+            
+            const phase = td_cells[0].textContent.trim();
+            const size_str = td_cells[1].textContent.trim();
+            const details_str = td_cells[2].textContent.trim();
+            const updated_str = td_cells[3].textContent.trim();
+            
+            // Filter DHA Lahore
+            const phase_lower = phase.toLowerCase();
+            if (!phase_lower.includes("dha")) return;
+            
+            // Size check
+            let size_marla = null;
+            if (size_str.toLowerCase().includes("5 marla")) {
+                size_marla = 5;
+            } else if (size_str.toLowerCase().includes("10 marla")) {
+                size_marla = 10;
+            } else if (size_str.toLowerCase().includes("1 kanal")) {
+                size_marla = 20;
+            }
+            
+            if (size_marla === null) return;
+            
+            if (!details_str.includes("@")) return;
+            
+            const parts = details_str.split("@");
+            const left_part = parts[0].trim();
+            const right_part = parts[1].trim();
+            
+            // Parse price (in Lacs)
+            const price_num_match = right_part.match(/[\d\.]+/);
+            if (!price_num_match) return;
+            
+            const price_val = parseFloat(price_num_match[0]);
+            const price_pkr = Math.round(price_val * 100000);
+            
+            // Parse block and plot
+            let block_val = "Block";
+            let plot_no = "TBD";
+            if (left_part.includes("-")) {
+                const b_parts = left_part.split("-");
+                block_val = "Block " + b_parts[0].trim();
+                plot_no = b_parts[1].trim();
+            } else {
+                block_val = left_part.trim();
+            }
+            
+            // Parse date
+            const date_match = updated_str.match(/(\d{1,2})\/(\d{1,2})\/(\d{4})/);
+            let last_checked = new Date().toISOString().split('T')[0];
+            if (date_match) {
+                const mm = parseInt(date_match[1], 10);
+                const dd = parseInt(date_match[2], 10);
+                const yyyy = parseInt(date_match[3], 10);
+                last_checked = `${yyyy}-${String(mm).padStart(2, '0')}-${String(dd).padStart(2, '0')}`;
+            }
+            
+            const clean_phase = phase.replace("DHA Lahore ", "").replace("DHA ", "").trim();
+            
+            listings.push({
+                id: "plot_live_" + plot_counter++,
+                phase: clean_phase,
+                block: block_val,
+                plot_no: plot_no,
+                size_marla: size_marla,
+                price_pkr: price_pkr,
+                possession: true,
+                ready_to_build: true,
+                features: ["possession-ready"],
+                source_site: "Lahore Real Estate",
+                original_url: "https://lahorerealestate.com/plots-for-sale/",
+                last_checked: last_checked,
+                status: "active",
+                description: `Verified plot in ${clean_phase} ${block_val}.`
+            });
+        });
+        
+        if (listings.length > 0) {
+            rawListings = listings;
+            processAndRender();
+            
+            // Update last updated sync Label to today's date
+            const dateLabel = new Date().toLocaleDateString('en-US', { day: 'numeric', month: 'long', year: 'numeric' });
+            if (syncLabel) syncLabel.textContent = `Last updated: ${dateLabel}`;
+            
+            console.log("Successfully loaded live listings from " + sourceName + ". Count: " + listings.length);
+        } else {
+            throw new Error("No eligible listings parsed from " + sourceName);
+        }
+    }
+
+    const forceRefreshBtn = document.getElementById('forceRefreshBtn');
+    if (forceRefreshBtn) {
+        forceRefreshBtn.addEventListener('click', () => {
+            fetchLivePlots(true);
         });
     }
 
