@@ -950,14 +950,14 @@ document.addEventListener('DOMContentLoaded', () => {
             const ownSec = document.getElementById('installment-section');
             const buildSec = document.getElementById('build-section');
 
-            let msg = "Hello Mir Brothers, I would like to consult regarding construction and owning a home.";
+            let msg = "Hello Mir Brothers & Co., I would like to consult regarding construction and owning a home.";
 
             if (homecareSec && scrollPos >= homecareSec.offsetTop && scrollPos < (homecareSec.offsetTop + homecareSec.clientHeight)) {
-                msg = "Hello Mir Brothers, I would like to book a HomeCare service.";
+                msg = "Hello Mir Brothers & Co., I would like to book a HomeCare service.";
             } else if (ownSec && scrollPos >= ownSec.offsetTop && scrollPos < (ownSec.offsetTop + ownSec.clientHeight)) {
-                msg = "Hello Mir Brothers, I am interested in homes available on installments.";
+                msg = "Hello Mir Brothers & Co., I am interested in homes available on installments.";
             } else if (buildSec && scrollPos >= buildSec.offsetTop && scrollPos < (buildSec.offsetTop + buildSec.clientHeight)) {
-                msg = "Hello Mir Brothers, I would like an estimate for residential construction.";
+                msg = "Hello Mir Brothers & Co., I would like an estimate for residential construction.";
             }
 
             whatsappBtn.href = `https://wa.me/923124363470?text=${encodeURIComponent(msg)}`;

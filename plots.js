@@ -199,7 +199,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <td><strong style="color: var(--gold-primary); font-family: 'Outfit'; font-size: 0.95rem;">${item.phase}</strong></td>
                 <td><strong>${sizeLabel}</strong></td>
                 <td><code style="background: rgba(255,255,255,0.03); padding: 0.25rem 0.5rem; border-radius: 4px; color: var(--gold-primary); font-weight: 700; font-family: monospace; font-size: 0.85rem;">${detailsVal}</code></td>
-                <td><span style="font-size: 0.8rem; font-weight: 600; color: var(--gold-primary); white-space: nowrap;">Mir Brothers Real Estate Division</span></td>
+                <td><span style="font-size: 0.8rem; font-weight: 600; color: var(--gold-primary); white-space: nowrap;">Mir Brothers & Co. Real Estate Division</span></td>
                 <td><span style="font-size: 0.82rem; color: var(--text-secondary);">${formattedDate}</span></td>
                 <td class="text-center">
                     <div style="display: flex; gap: 0.4rem; justify-content: center; align-items: center;">
@@ -295,7 +295,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
 
                 <div style="padding: 1.25rem; background: rgba(197,168,128,0.06); border: 1px dashed rgba(197,168,128,0.25); border-radius: 8px; margin-bottom: 2rem;">
-                    <h6 style="color: var(--gold-primary); margin-bottom: 0.5rem; font-family: 'Outfit'; font-size: 0.9rem;">Mir Brothers Services Include:</h6>
+                    <h6 style="color: var(--gold-primary); margin-bottom: 0.5rem; font-family: 'Outfit'; font-size: 0.9rem;">Mir Brothers & Co. Services Include:</h6>
                     <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.35rem; font-size: 0.78rem; color: var(--text-secondary);">
                         <li>✓ Complete architectural planning</li>
                         <li>✓ PEC-licensed structural design</li>
