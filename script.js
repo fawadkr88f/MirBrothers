@@ -83,8 +83,8 @@ document.addEventListener('DOMContentLoaded', () => {
             btn.classList.add('active');
 
             portfolioItems.forEach(item => {
-                const cat = item.dataset.category;
-                if (filter === 'all' || cat === filter) {
+                const cat = (item.dataset.category || '').split(' ');
+                if (filter === 'all' || cat.includes(filter)) {
                     item.style.display = 'block';
                 } else {
                     item.style.display = 'none';
@@ -740,6 +740,227 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
             calcLeadForm.style.display = 'none';
             calcSuccessMsg.style.display = 'block';
+        });
+    }
+
+
+    // --- QUICK CONSTRUCTION ESTIMATOR LOGIC ---
+    const quickCity = document.getElementById('quickCity');
+    const quickPlotSize = document.getElementById('quickPlotSize');
+    const quickCoveredArea = document.getElementById('quickCoveredArea');
+    const quickType = document.getElementById('quickType');
+    const quickQuality = document.getElementById('quickQuality');
+    const quickCostRange = document.getElementById('quickCostRange');
+
+    function updateQuickEstimate() {
+        if (!quickCity || !quickPlotSize || !quickCoveredArea || !quickType || !quickQuality || !quickCostRange) return;
+
+        const area = parseFloat(quickCoveredArea.value) || 0;
+        const city = quickCity.value;
+        const type = quickType.value;
+        const quality = quickQuality.value;
+
+        // Base rate calculations
+        let baseRate = 3500; // Grey structure standard base
+        if (type === 'turnkey') {
+            baseRate = 6500; // Turnkey standard base
+        }
+
+        // Quality multipliers
+        let qualityMult = 1.0;
+        if (quality === 'premium') qualityMult = 1.2;
+        if (quality === 'luxury') qualityMult = 1.5;
+
+        // City multipliers
+        let cityMult = 1.0;
+        if (city === 'other') cityMult = 1.05;
+
+        const baseCost = area * baseRate * qualityMult * cityMult;
+        
+        // Range (+/- 8%)
+        const minCost = Math.round((baseCost * 0.92) / 1000) * 1000;
+        const maxCost = Math.round((baseCost * 1.08) / 1000) * 1000;
+
+        quickCostRange.textContent = `PKR ${minCost.toLocaleString()} - PKR ${maxCost.toLocaleString()}`;
+    }
+
+    if (quickCity) {
+        [quickCity, quickPlotSize, quickCoveredArea, quickType, quickQuality].forEach(elem => {
+            elem.addEventListener('input', updateQuickEstimate);
+            elem.addEventListener('change', updateQuickEstimate);
+        });
+
+        // Initialize quick estimate
+        updateQuickEstimate();
+
+        // Template logic for quick plot size pre-fill
+        quickPlotSize.addEventListener('change', () => {
+            const size = quickPlotSize.value;
+            if (size === '5_marla') quickCoveredArea.value = 1800;
+            if (size === '10_marla') quickCoveredArea.value = 3200;
+            if (size === '1_kanal') quickCoveredArea.value = 4500;
+            updateQuickEstimate();
+        });
+
+        // "Customize & Get Detailed BOQ" button action
+        const detailedBOQLinks = document.querySelectorAll('a[href="#stepper-wizard-anchor"]');
+        detailedBOQLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                // Pre-fill Stepper inputs based on Quick estimate selections
+                const wizardPlotSize = document.getElementById('wizardPlotSize');
+                const wizardCity = document.getElementById('wizardCity');
+                
+                if (wizardPlotSize) {
+                    wizardPlotSize.value = quickPlotSize.value;
+                    // Trigger templating update
+                    const event = new Event('change');
+                    wizardPlotSize.dispatchEvent(event);
+                }
+
+                if (wizardCity) {
+                    // map selection
+                    if (quickCity.value === 'lahore' || quickCity.value === 'gujranwala') {
+                        wizardCity.value = 'lahore';
+                    } else {
+                        wizardCity.value = 'islamabad'; // general fallback
+                    }
+                }
+
+                // set scope
+                const wizardTypeRadio = document.querySelector(`input[name="wizardType"][value="${quickType.value}"]`);
+                if (wizardTypeRadio) {
+                    wizardTypeRadio.checked = true;
+                }
+
+                // set quality
+                let wQualityVal = 'standard';
+                if (quickQuality.value === 'premium') wQualityVal = 'premium';
+                if (quickQuality.value === 'luxury') wQualityVal = 'luxury';
+                const wizardQualityRadio = document.querySelector(`input[name="wizardQuality"][value="${wQualityVal}"]`);
+                if (wizardQualityRadio) {
+                    wizardQualityRadio.checked = true;
+                }
+            });
+        });
+    }
+
+    // --- HOME AFFORDABILITY CALCULATOR LOGIC ---
+    const affordSalary = document.getElementById('affordSalary');
+    const affordDownpayment = document.getElementById('affordDownpayment');
+    const affordInstallment = document.getElementById('affordInstallment');
+    const affordCostRange = document.getElementById('affordCostRange');
+
+    function updateAffordabilityEstimate() {
+        if (!affordSalary || !affordDownpayment || !affordInstallment || !affordCostRange) return;
+
+        const downpayment = parseFloat(affordDownpayment.value) || 0;
+        const installment = parseFloat(affordInstallment.value) || 0;
+
+        // Formula: Down Payment + (Installment * 12 months * 12 years)
+        const powerBase = downpayment + (installment * 12 * 12);
+        
+        const minVal = Math.round((powerBase * 0.9) / 100000) * 100000;
+        const maxVal = Math.round((powerBase * 1.1) / 100000) * 100000;
+
+        affordCostRange.textContent = `PKR ${minVal.toLocaleString()} - PKR ${maxVal.toLocaleString()}`;
+    }
+
+    if (affordSalary) {
+        [affordSalary, affordDownpayment, affordInstallment].forEach(elem => {
+            elem.addEventListener('input', updateAffordabilityEstimate);
+        });
+
+        // Initialize affordability estimate
+        updateAffordabilityEstimate();
+    }
+
+    // Pre-assessment lead form
+    const affordabilityLeadForm = document.getElementById('affordabilityLeadForm');
+    const leadSuccessMsg = document.getElementById('leadSuccessMsg');
+
+    if (affordabilityLeadForm) {
+        affordabilityLeadForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const submitBtn = affordabilityLeadForm.querySelector('button[type="submit"]');
+            submitBtn.textContent = 'Processing Pre-Assessment...';
+            submitBtn.disabled = true;
+
+            // Extract lead details
+            const leadData = {
+                name: document.getElementById('leadName').value,
+                phone: document.getElementById('leadPhone').value,
+                email: document.getElementById('leadEmail').value,
+                employment: document.getElementById('leadEmployment').value,
+                salary: affordSalary.value,
+                downpayment: affordDownpayment.value,
+                installment: affordInstallment.value,
+                city: document.getElementById('affordCity').value,
+                type: document.getElementById('affordType').value,
+                budget: document.getElementById('affordBudget').value
+            };
+
+            console.log("Pre-assessment Lead Data Saved:", leadData);
+
+            setTimeout(() => {
+                submitBtn.style.display = 'none';
+                affordabilityLeadForm.reset();
+                leadSuccessMsg.style.display = 'block';
+            }, 1200);
+        });
+    }
+
+    // --- HOMECARE BOOKING FORM LOGIC ---
+    const homecareBookingForm = document.getElementById('homecareBookingForm');
+    const hcSuccessMsg = document.getElementById('hcSuccessMsg');
+
+    if (homecareBookingForm) {
+        homecareBookingForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const submitBtn = homecareBookingForm.querySelector('button[type="submit"]');
+            submitBtn.textContent = 'Sending Booking Request...';
+            submitBtn.disabled = true;
+
+            const bookingData = {
+                name: document.getElementById('hcName').value,
+                phone: document.getElementById('hcPhone').value,
+                city: document.getElementById('hcCity').value,
+                area: document.getElementById('hcArea').value,
+                service: document.getElementById('hcService').value,
+                date: document.getElementById('hcDate').value,
+                description: document.getElementById('hcDescription').value
+            };
+
+            console.log("HomeCare Handyman Booking Received:", bookingData);
+
+            setTimeout(() => {
+                submitBtn.style.display = 'none';
+                homecareBookingForm.reset();
+                hcSuccessMsg.style.display = 'block';
+            }, 1200);
+        });
+    }
+
+    // --- CONTEXTUAL FLOATING WHATSAPP BUTTON ---
+    const whatsappBtn = document.getElementById('whatsappFloatingBtn');
+    if (whatsappBtn) {
+        window.addEventListener('scroll', () => {
+            const scrollPos = window.scrollY + 200;
+
+            const homecareSec = document.getElementById('homecare-section');
+            const ownSec = document.getElementById('installment-section');
+            const buildSec = document.getElementById('build-section');
+
+            let msg = "Hello Mir Brothers, I would like to consult regarding construction and owning a home.";
+
+            if (homecareSec && scrollPos >= homecareSec.offsetTop && scrollPos < (homecareSec.offsetTop + homecareSec.clientHeight)) {
+                msg = "Hello Mir Brothers, I would like to book a HomeCare service.";
+            } else if (ownSec && scrollPos >= ownSec.offsetTop && scrollPos < (ownSec.offsetTop + ownSec.clientHeight)) {
+                msg = "Hello Mir Brothers, I am interested in homes available on installments.";
+            } else if (buildSec && scrollPos >= buildSec.offsetTop && scrollPos < (buildSec.offsetTop + buildSec.clientHeight)) {
+                msg = "Hello Mir Brothers, I would like an estimate for residential construction.";
+            }
+
+            whatsappBtn.href = `https://wa.me/923124363470?text=${encodeURIComponent(msg)}`;
         });
     }
 

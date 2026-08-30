@@ -2559,10 +2559,311 @@ a {
 }
 
 @keyframes spin {
-    from {
-        transform: rotate(0deg);
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Three Core Service Cards Section */
+.core-services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2.5rem;
+    margin-top: 3rem;
+}
+
+.core-service-card {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 3rem 2.5rem;
+    text-align: center;
+    transition: var(--transition-bounce);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.core-service-card:hover {
+    border-color: var(--gold-primary);
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(197, 168, 128, 0.1);
+}
+
+.core-service-icon {
+    width: 70px;
+    height: 70px;
+    background: rgba(197, 168, 128, 0.1);
+    color: var(--gold-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 2rem;
+    font-size: 1.8rem;
+    transition: var(--transition-smooth);
+}
+
+.core-service-card:hover .core-service-icon {
+    background: var(--gold-gradient);
+    color: var(--bg-primary);
+}
+
+.core-service-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.core-service-card p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+/* Home Journey Timeline */
+.journey-flow {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1.5rem;
+    margin-top: 3rem;
+    position: relative;
+}
+
+.journey-step {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.journey-step-num {
+    width: 40px;
+    height: 40px;
+    background: var(--gold-gradient);
+    color: var(--bg-primary);
+    font-weight: 700;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    font-size: 1.1rem;
+}
+
+.journey-step h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.journey-step p {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+/* Geographic Focus & Badges */
+.geo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.geo-card {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 2.5rem;
+    transition: var(--transition-smooth);
+}
+
+.geo-card.primary {
+    border-color: var(--gold-primary);
+    box-shadow: 0 10px 30px rgba(197, 168, 128, 0.05);
+}
+
+.geo-tag {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.geo-tag.primary-tag {
+    background: rgba(197, 168, 128, 0.15);
+    color: var(--gold-primary);
+    border: 1px solid var(--gold-primary);
+}
+
+.geo-tag.secondary-tag {
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--text-secondary);
+    border: 1px solid var(--border-color);
+}
+
+/* Simpler Entry-level Calculators */
+.quick-calc-box, .affordability-calc-box {
+    margin-bottom: 3rem;
+}
+
+.quick-calc-box h3, .affordability-calc-box h3 {
+    margin-bottom: 1.5rem;
+    color: var(--gold-primary);
+    font-size: 1.4rem;
+}
+
+.calc-range-output {
+    background: rgba(197, 168, 128, 0.08);
+    border: 1.5px dashed var(--gold-primary);
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.calc-range-output span {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.calc-range-output h2 {
+    font-size: 2.2rem;
+    color: var(--text-primary);
+}
+
+/* Floating WhatsApp Widget */
+.whatsapp-floating {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    z-index: 9999;
+    cursor: pointer;
+    transition: var(--transition-bounce);
+}
+
+.whatsapp-floating:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 16px rgba(37, 211, 102, 0.4);
+}
+
+.whatsapp-floating svg {
+    width: 32px;
+    height: 32px;
+    fill: currentColor;
+}
+
+/* Navigation Dropdown styling */
+.nav-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.nav-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--bg-secondary);
+    min-width: 220px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+    z-index: 100;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 0.5rem 0;
+    margin-top: 0.5rem;
+}
+
+.nav-dropdown-content a {
+    color: var(--text-secondary);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 0.9rem;
+    transition: var(--transition-smooth);
+}
+
+.nav-dropdown-content a:hover {
+    background-color: rgba(197, 168, 128, 0.1);
+    color: var(--gold-primary);
+}
+
+.nav-dropdown:hover .nav-dropdown-content {
+    display: block;
+}
+
+/* Trust Badge styles */
+.aftercare-badge {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    background: rgba(197, 168, 128, 0.05);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 2.5rem;
+    margin-top: 3rem;
+}
+
+.aftercare-badge-icon {
+    font-size: 3rem;
+    color: var(--gold-primary);
+    background: rgba(197, 168, 128, 0.1);
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.aftercare-badge-content h4 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.aftercare-badge-content p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.project-categories-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    .nav-dropdown-content {
+        position: static;
+        box-shadow: none;
+        border: none;
+        padding-left: 1.5rem;
+        display: block; /* show by default on mobile */
     }
-    to {
-        transform: rotate(360deg);
+    .journey-flow {
+        grid-template-columns: 1fr;
+    }
+    .aftercare-badge {
+        flex-direction: column;
+        text-align: center;
     }
 }
+
